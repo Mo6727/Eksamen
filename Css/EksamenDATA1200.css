@@ -1,0 +1,24 @@
+.header {
+  height: 7em;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: rgb(255, 213, 0);
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+}
+
+.oslomet-logo {
+  height: 5em;
+}
