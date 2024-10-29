@@ -14,6 +14,11 @@
   background-color: rgb(255, 213, 0);
 }
 
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
 .middle-section {
   display: flex;
   align-items: center;
@@ -21,4 +26,16 @@
 
 .oslomet-logo {
   height: 5em;
+}
+
+.right-section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 2em;
+flex-shrink: 0;
+}
+
+.search-icon {
+  height: 2.25em;
 }
