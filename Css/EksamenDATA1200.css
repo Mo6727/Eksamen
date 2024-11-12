@@ -207,7 +207,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 
 /* Mona - Studiets oppbygging*/
 #study-layout {
-text-align: center;
+    text-align: center;
 }
 
 .year-content {
@@ -238,7 +238,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
 }
 
 .study-box {
@@ -266,7 +265,7 @@ button:hover {
     background-color: #fafafa;
     padding: 15px;
     border: 1px solid #000000;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-bottom: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -282,8 +281,9 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     background-color:rgb(255, 213, 0);
-    padding: 5px;
-    border-radius: 4px;
+    padding: 7px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: auto;
     font-weight: bold;
     color: #333;
 }
