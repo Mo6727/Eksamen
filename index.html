@@ -10,14 +10,26 @@
 <body style="padding-bottom: 1000px"> <!--bare for å teste!-->
     <header class="header">
         <nav class="nav-container">
-            <l href="index.html">
-                <img class="oslomet-logo" src="pics/Logo_of_Oslo_Metropolitan_University.svg" alt="OsloMetLogo"></l>
-            <a>EN</a>
-            <a>MENY</a>
-            <a>SØK</a>
-            <a href="accessibility.html">Accessibility</a>
-            <a href="github">GitHub</a>
-            <a href="hobby">Activity</a>
+            <ul class="left-nav">
+                <li><a href="https://www.oslomet.no/"><img class="oslomet-logo" src="pics/Logo_of_Oslo_Metropolitan_University.svg" alt="OsloMetLogo"></a></li>
+                <li><a href="https://www.oslomet.no/studier/studieoversikt"><img class="less-than-logo" src="pics/left-arrow-svgrepo-com.svg" alt="Less-than"></a></li>
+                <li><a href="https://www.oslomet.no/studier/studieoversikt" class="nav-link">Studieoversikt</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="accessibility.html" class="nav-link">Accessibility</a></li>
+                <li><a href="github.html" class="nav-link">GitHub</a></li>
+                <li><a href="hobby.html" class="nav-link">Activity</a></li>
+                <li><a href="https://www.oslomet.no/en" class="nav-link">EN</a></li>
+                <li><img class="search-icon" src="pics/search-icon.svg" alt="Search"></li>
+                <li class="dropdown">
+                    <a class="dropbtn">MENY<i class="fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Studier</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            </ul>
         </nav>
     </header>
 
@@ -25,20 +37,39 @@
         <section class="top-section">
             <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
             <p>Bachelorprogram</p>
-
-            <div class="top-section-grid-container">
-                <div class="grid-item">Studiested
-                    Pilestredet i Oslo</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-              </div>
-
         </section>
+
+        <section class="top-section-grid-container">
+            <div class="top-section-grid">
+                <div class="grid-item1">
+                    <p class="grid-text-over">Studiested</p>
+                    <p class="grid-text-under">Pilestredet i Oslo</p></div>
+                <div class="grid-item2">
+                    <p class="grid-text-over">Varighet</p>
+                    <p class="grid-text-under">3 år</p></div>
+                <div class="grid-item3">                    
+                    <p class="grid-text-over">Omfang</p>
+                    <p class="grid-text-under">Heltid</p></div>
+                <div class="grid-item4">                   
+                    <p class="grid-text-over">Studiepoeng</p>
+                    <p class="grid-text-under">180</p></div>
+                <div class="grid-item5">
+                    <p class="grid-text-over">Studiestart</p>
+                    <p class="grid-text-under">August</p></div>
+                <div class="grid-item6">
+                    <p class="grid-text-over">Undervisningsspråk</p>
+                    <p class="grid-text-under">Norsk &sdot; Engelsk</p></div>
+                <div class="grid-item7">
+                    <p class="grid-text-over">Studieplasser</p>
+                    <p class="grid-text-under">40</p></div>
+                </div>
+        </section>
+
+        <section class="top-section-description">
+            <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+        </section>
+
+
 
     </main>
 

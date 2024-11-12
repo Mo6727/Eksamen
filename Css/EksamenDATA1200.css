@@ -1,20 +1,140 @@
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-/*hele html har denne teksten som standard*/
+} /*hele html har denne teksten som standard*/
 
 main {
-  padding-top: 5em;
-}
-/*Hvis ikke havner øverste delen av bodyen under navbaren*/
+  padding-top: 7em;
+  width: 100%;
+} /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
-.oslomet-logo {
-  height: 4.5em;
-  padding-top: 0.5em;
-  padding-left: 1em;
+
+.header {
+  max-width: min(96%, 1140px);
+  margin: 0 auto;
+  z-index: 10;
 }
 
 .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  background-color: rgb(255, 213, 0);
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.oslomet-logo {
+  height: 5em;
+  padding-left: 2em;
+  padding-right: 1.5em;
+}
+
+.less-than-logo {
+  height: 1.5em;
+  padding-top: 0.25em;
+  padding-left: 2.5em;
+}
+
+.right-nav {
+  display: flex;
+  list-style: none;
+  margin: 2em;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  margin-right: 2em;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+} /*"hove"r", fordi fant ikke måte å bruke "click" dropdown uten å måtte bruke js*/
+
+.dropdown, .dropbtn {
+  font-size: 1.3rem;
+  background-color: rgb(255, 213, 0);
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.dropdown-content {
+  font-size: 1.5em;
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  width: 100%;
+  left: 0;
+  right:0;
+  box-shadow: 0em 1em 1em 0em rgba(0,0,0,0.1);
+  z-index: 1;
+  min-width: 160px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 4em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-link:hover, .dropdown:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 1.9em;
+  padding-right:1em;
+}
+
+.hamburger-menu {
+  height: 3em;  
+}
+
+
+/*
+kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
+@media screen and (max-width: 27.25em) {
+   .masthead > .container {
+      max-width: 100%;
+      padding: 0.5rem 0;
+   }
+}
+.nav-container {
+  display: flex;
   font-weight: bold;
   background-color: rgb(255, 213, 0);
   overflow: hidden;
@@ -27,27 +147,60 @@ main {
 .nav-container a {
   float: right;
   color:black;
-  text-align: center;
-  padding: 2em 1em;
+  padding: 2.5em 1em;
   text-decoration: none;
   font-size: 1.06em;
+
 }
 
 .nav-container a:hover {
   background-color: white;
   color: rgb(255, 213, 0);
-}
+}*/
 
 .top-section {
   text-align: center;
   font-size: 2.5em;
 }
 
-.top-section-grid-container {
+.top-section-grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  text-align: center;
+  color:rgb(43, 43, 43);
+  font-size: 2.5em;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: 3em;
 }
 
-/* 
-z-index: 100;
-*/
+.grid-item5 {
+  padding-left: 4em;
+}
+
+.grid-item6 {
+  grid-column: 2 / 4;
+  border-bottom-style: ridge;
+  padding-bottom: 0.5em;
+}
+.grid-item7 {
+  padding-right: 4em;
+}
+
+.grid-text-over {
+  font-size: 0.6em;
+  font-weight: bold;
+  padding-top: 1.6em;
+  border-top-style: ridge;
+  border-color: rgba(39, 39, 39, 0.2);
+}
+
+.grid-text-under {
+  font-size: 0.6em;
+  margin-top: -1em;
+}
+
+.top-section-description {
+  text-align: center;
+  font-size: 1.5em;
+}
