@@ -7,21 +7,6 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
-/*footer start*/
-footer {
-  background-color: #ffd500;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100;
-}
-
-/*footer ul (unordered list) decorations turned off*/
-footer ul {
-  list-style: none;
-}
-
 .header {
   max-width: min(96%, 1140px);
   margin: 0 auto;
@@ -279,6 +264,21 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
     color: #333;
 }
 
+/*footer start*/
+.bottom-footer {
+  background-color: #ffd500;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100;
+}
+
+/*footer ul (unordered list) decorations turned off*/
+.bottom-footer ul {
+  list-style: none;
+}
+
 /*flex-container class modificatrions*/
 .flex-container {
   display: flex;
@@ -307,24 +307,6 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .flex-container ul li a:hover {
   text-decoration: underline;
   color: white;
-}
-
-/*button class*/
-.button {
-  background-color: #000;
-  color: white;
-  padding: 1.5rem;
-  margin: 2rem;
-}
-
-.button a {
-  color: white;
-}
-
-/*nyhetsbrev class*/
-.nyhetsbrev {
-  padding: 1.5rem;
-  margin: 2rem;
 }
 
 /*top-footer-border class*/
