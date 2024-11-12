@@ -338,3 +338,11 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   margin: 1.5em;
   padding: 1.5em;
 }
+
+/*socials class ikoner*/
+.socials img {
+  width: 20px; /* samme størrelse alle ikoner */
+  height: 20px;
+  margin-right: 8px; /* Space mellom link og ikoner */
+  vertical-align: middle;
+}
