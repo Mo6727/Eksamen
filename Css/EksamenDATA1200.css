@@ -323,6 +323,12 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   flex-basis: 100%;
   margin: 1.5em;
   padding: 1.5em;
+  line-height: 1.55em;
+}
+
+.link-kontakt-oss {
+  margin-top: 1em;
+  font-weight: bold;
 }
 
 /*contact class*/
@@ -331,6 +337,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   flex-basis: 100%;
   margin: 1.5em;
   padding: 1.5em;
+  line-height: 1.55em;
 }
 
 /*socials class*/
@@ -339,12 +346,13 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   flex-basis: 100%;
   margin: 1.5em;
   padding: 1.5em;
+  line-height: 2.5em;
 }
 
 /*socials class ikoner*/
 .socials img {
-  width: 20px; /* samme størrelse alle ikoner */
-  height: 20px;
-  margin-right: 8px; /* Space mellom link og ikoner */
+  width: 2em; /* samme størrelse alle ikoner */
+  height: 2em;
+  margin-right: 0.5em; /* Space mellom link og ikoner */
   vertical-align: middle;
 }
