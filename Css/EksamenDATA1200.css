@@ -13,6 +13,10 @@ main {
   z-index: 10;
 }
 
+/*
+kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
+*/
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -49,19 +53,19 @@ main {
 .right-nav {
   display: flex;
   list-style: none;
-  margin: 2em;
+  margin-right: 2em;
   align-items: center;
 }
 
-.nav-link {
+.view-nav-link, .nav-link {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 } /*"hover", fordi fant ikke måte å bruke "click" dropdown uten å måtte bruke js*/
 
@@ -109,25 +113,24 @@ main {
   display: block;
 }
 
-.nav-link:hover, .dropdown:hover {
+.view-nav-link:hover, .nav-link:hover, .dropdown:hover {
   color: white;
   cursor: pointer;
 }
 
-.search-icon {
-  height: 1.9em;
-  padding-right:1em;
+/*linker i navbar forsvinner ved scaling*/
+@media (max-width: 1200px) {
+  .nav-link {
+    display: none;
+  }
 }
-
-/*
-kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-@media screen and (max-width: 27.25em) {
-   .masthead > .container {
-      max-width: 100%;
-      padding: 0.5rem 0;
-   }
+/*narrow screen*/
+@media (max-width: 650px) {
+  .oslomet-logo, .view-nav-link {
+    height: 3em;
+    padding: 0;
+  }
 }
-*/
 
 .top-section {
   text-align: center;
@@ -142,7 +145,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   font-size: 2.5em;
   padding-left: 4rem;
   padding-right: 4rem;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .grid-item5 {
@@ -152,7 +155,6 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-item6 {
   grid-column: 2 / 4;
   border-bottom-style: ridge;
-  padding-bottom: 0.5em;
 }
 .grid-item7 {
   padding-right: 4em;
@@ -161,7 +163,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-text-over {
   font-size: 0.6em;
   font-weight: bold;
-  padding-top: 1.6em;
+  padding-top: 1.5em;
   border-top-style: ridge;
   border-color: rgba(39, 39, 39, 0.2);
 }
@@ -169,6 +171,16 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-text-under {
   font-size: 0.6em;
   margin-top: -1em;
+}
+
+/*flex*/
+@media (max-width: 900px) {
+  .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
+  display: flex;
+  flex-direction: column;
+  border-bottom-style: none;
+  padding: 0;
+  }
 }
 
 .top-section-description {
