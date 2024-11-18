@@ -13,11 +13,8 @@ main {
   z-index: 10;
 }
 
-/*
-kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-*/
-
-.nav-container {
+/*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
+.nav-container, .nav-container-activity {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,6 +61,8 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   margin-right: 1.5em;
 }
 
+/*Brukt w3school for å lage hover->dropdownmeny
+    Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->*/
 .dropdown {
   float: right;
   overflow: hidden;
@@ -71,7 +70,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 
 .dropdown, .dropbtn {
   font-size: 1.3rem;
-  background-color: rgb(255, 213, 0);
+  background-color: inherit;
   border: none;
   outline: none;
   margin: 0;
@@ -82,7 +81,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   list-style: none;
   display: none;
   position: absolute;
-  background-color: inherit;
+  background-color: rgb(255, 213, 0);
   width: 100%;
   left: 0;
   right:0;
@@ -134,7 +133,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 
 .top-section {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .top-section-grid {
@@ -363,3 +362,30 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   margin-right: 0.5em; /* Space mellom link og ikoner */
   vertical-align: middle;
 }
+
+/*-----ACTIVITY PAGE-----*/
+/*HEADER BRUKT SAMME SOM INDEX, KANSKJE BYTTE/GJØRE NOE KREATIVT?*/
+.nav-container-activity {
+  background-image: url(https://static.wixstatic.com/media/1d6090cc4bbf44628dfd82a1979770e8.jpg/v1/fill/w_1958,h_1104,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/1d6090cc4bbf44628dfd82a1979770e8.jpg);
+  background-position: 50% 35%;
+}
+
+.movie-list-section {
+  margin-top: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.movie-list-img {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  text-align: center;
+}
+
+.movie-img {
+  height: 40em;
+}
+
