@@ -319,6 +319,50 @@ main {
   color: white;
 }
 
+/*scrollmenu*/
+.section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  width: 80%;
+  padding: 10px;
+}
+
+.section-scrollmenu-related-programs a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  background-color: #ffd500;
+  margin: 2px;
+  width: 300px; 
+  vertical-align: top;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.section-scrollmenu-related-programs a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section-scrollmenu-related-programs .program-item ul {
+list-style-type: none; /* Removes dots */
+padding: 0;
+ margin: 0;
+}
+
+.section-scrollmenu-related-programs .program-item ul li {
+margin-bottom: 5px; 
+font-size: 14px; 
+}
+
+.section-scrollmenu-related-programs .program-item strong {
+display: block;
+font-size: 16px;
+margin-bottom: 8px;
+}
+
 /*top-footer-border class*/
 .top-footer-border {
   flex-grow: 1;
