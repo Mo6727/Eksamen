@@ -179,7 +179,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 /*M - Studiets oppbygging*/
 #study-layout {
     text-align: center;
-    margin
+    margin: 5em;
 }
 
 .year-content {
@@ -193,12 +193,12 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .study-button {
     padding: 1rem 2rem;
     margin: 1rem;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
     background-color: rgb(255, 213, 0);
     color: rgb(0, 0, 0);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .study-button:hover {
@@ -233,13 +233,13 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .subject-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around; /*Fjerne?*/
     background-color: #fafafa;
     border: 1px solid #000000;
     border-radius: 20px;
     margin: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    min-height: 50px; 
+    min-height: 7em; 
 }
   
 .subject-card h3 {
