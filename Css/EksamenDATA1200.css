@@ -2,6 +2,10 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 } /*hele html har denne teksten som standard*/
 
+body {
+  margin: 0;
+}
+
 main {
   padding-top: 7em;
   width: 100%;
@@ -13,7 +17,8 @@ main {
   z-index: 10;
 }
 
-.nav-container {
+/*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
+.nav-container, .nav-container-activity {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,25 +54,27 @@ main {
 .right-nav {
   display: flex;
   list-style: none;
-  margin: 2em;
+  margin-right: 2em;
   align-items: center;
 }
 
-.nav-link {
+.view-nav-link, .nav-link {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 
+/*Brukt w3school for å lage hover->dropdownmeny
+    Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->*/
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 } /*"hover", fordi fant ikke måte å bruke "click" dropdown uten å måtte bruke js*/
 
 .dropdown, .dropbtn {
   font-size: 1.3rem;
-  background-color: rgb(255, 213, 0);
+  background-color: inherit;
   border: none;
   outline: none;
   margin: 0;
@@ -78,7 +85,7 @@ main {
   list-style: none;
   display: none;
   position: absolute;
-  background-color: inherit;
+  background-color: rgb(255, 213, 0);
   width: 100%;
   left: 0;
   right:0;
@@ -109,29 +116,28 @@ main {
   display: block;
 }
 
-.nav-link:hover, .dropdown:hover {
+.view-nav-link:hover, .nav-link:hover, .dropdown:hover {
   color: white;
   cursor: pointer;
 }
 
-.search-icon {
-  height: 1.9em;
-  padding-right:1em;
+/*linker i navbar forsvinner ved scaling*/
+@media (max-width: 1200px) {
+  .nav-link {
+    display: none;
+  }
 }
-
-/*
-kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-@media screen and (max-width: 27.25em) {
-   .masthead > .container {
-      max-width: 100%;
-      padding: 0.5rem 0;
-   }
+/*narrow screen*/
+@media (max-width: 650px) {
+  .oslomet-logo, .view-nav-link {
+    height: 3em;
+    padding: 0;
+  }
 }
-*/
 
 .top-section {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .top-section-grid {
@@ -142,7 +148,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   font-size: 2.5em;
   padding-left: 4rem;
   padding-right: 4rem;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .grid-item5 {
@@ -152,7 +158,6 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-item6 {
   grid-column: 2 / 4;
   border-bottom-style: ridge;
-  padding-bottom: 0.5em;
 }
 .grid-item7 {
   padding-right: 4em;
@@ -161,7 +166,7 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-text-over {
   font-size: 0.6em;
   font-weight: bold;
-  padding-top: 1.6em;
+  padding-top: 1.5em;
   border-top-style: ridge;
   border-color: rgba(39, 39, 39, 0.2);
 }
@@ -169,6 +174,16 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
 .grid-text-under {
   font-size: 0.6em;
   margin-top: -1em;
+}
+
+/*flex*/
+@media (max-width: 900px) {
+  .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
+  display: flex;
+  flex-direction: column;
+  border-bottom-style: none;
+  padding: 0;
+  }
 }
 
 .top-section-description {
@@ -304,6 +319,50 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   color: white;
 }
 
+/*scrollmenu*/
+.section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  width: 80%;
+  padding: 10px;
+}
+
+.section-scrollmenu-related-programs a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  background-color: #ffd500;
+  margin: 2px;
+  width: 300px; 
+  vertical-align: top;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.section-scrollmenu-related-programs a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section-scrollmenu-related-programs .program-item ul {
+list-style-type: none; /* Removes dots */
+padding: 0;
+ margin: 0;
+}
+
+.section-scrollmenu-related-programs .program-item ul li {
+margin-bottom: 5px; 
+font-size: 14px; 
+}
+
+.section-scrollmenu-related-programs .program-item strong {
+display: block;
+font-size: 16px;
+margin-bottom: 8px;
+}
+
 /*top-footer-border class*/
 .top-footer-border {
   flex-grow: 1;
@@ -351,3 +410,30 @@ kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-l
   margin-right: 0.5em; /* Space mellom link og ikoner */
   vertical-align: middle;
 }
+
+/*-----ACTIVITY PAGE-----*/
+/*HEADER BRUKT SAMME SOM INDEX, KANSKJE BYTTE/GJØRE NOE KREATIVT?*/
+.nav-container-activity {
+  background-image: url(https://static.wixstatic.com/media/1d6090cc4bbf44628dfd82a1979770e8.jpg/v1/fill/w_1958,h_1104,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/1d6090cc4bbf44628dfd82a1979770e8.jpg);
+  background-position: 50% 35%;
+}
+
+.movie-list-section {
+  margin-top: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.movie-list-img {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  text-align: center;
+}
+
+.movie-img {
+  height: 40em;
+}
+
