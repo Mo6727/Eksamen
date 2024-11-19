@@ -2,6 +2,10 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 } /*hele html har denne teksten som standard*/
 
+body {
+  margin: 0;
+}
+
 main {
   padding-top: 7em;
   width: 100%;
