@@ -319,6 +319,126 @@ main {
   color: white;
 }
 
+
+
+
+/*article studentstories*/
+.article-studentstories {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* Juster elementene øverst */
+  width: 100%; /* Sørg for at innholdet tar opp hele bredden */
+  max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
+  background-color: #ffd500;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.section-text {
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.img-smiley {
+  width: 100%;
+  max-width: 100%; /* Gjør bildet responsivt */
+  height: auto;
+  border-radius: 8px;
+}
+
+.link-studentstories:hover {
+        opacity: 0.5;
+      }
+
+      .link-studentstories {
+        text-decoration: none;
+        color: black;
+      }
+
+      .h3-teknologi-og-design {
+        text-decoration: underline;
+        font-size: 14px;
+        margin: 15px;
+        margin-left: 8px;
+        margin-bottom: 30px;
+      }
+
+      .p-spå-fremtiden-med-matematikk-og-datavitenskap {
+        margin: 15px;
+      }
+
+@media (max-width: 768px) {
+  .article-studentstories {
+    flex-direction: column; /* Hele artikkelen i én kolonne */
+    align-items: center;
+  }
+
+  .content-row {
+    flex-direction: column; /* Stable tekst og bilde */
+    align-items: center;
+    width: 100%; 
+  }
+
+  .section-text, .image {
+    width: 100%; /* Full bredde for tekst og bilde */
+  }
+
+  .section-text {
+    order: 1;
+  }
+
+  .image {
+    order: 2;
+  }
+
+}
+
+.button-more-studentstories {
+
+  cursor: pointer;
+  background-color: #ffd500;
+  border:none;
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-align: center; 
+  display: flex;
+  transition: background-color 0.5s, color 0.5s;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.button-more-studentstories:hover {
+  opacity: 0.7;
+  background-color: #e0c000;
+}
+
+.button-more-studentstories:active {
+  opacity: 0.7;
+  transform: scale(0.98); /* Button "press" effect */
+}
+
+@media (max-width: 768px) {
+  .button-more-studentstories {
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Optional: Limit maximum width */
+  }
+}
+
 /*scrollmenu*/
 .section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   background-color: white;
@@ -326,6 +446,7 @@ main {
   white-space: nowrap;
   width: 80%;
   padding: 10px;
+  margin: 20px auto;
 }
 
 .section-scrollmenu-related-programs a {
