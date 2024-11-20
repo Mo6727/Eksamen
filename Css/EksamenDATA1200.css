@@ -130,7 +130,7 @@ main {
 /*narrow screen - navbar*/
 @media (max-width: 650px) {
   .oslomet-logo, .view-nav-link {
-    height: 3em;
+    height: 2em;
     padding: 0;
   }
 }
@@ -541,7 +541,6 @@ margin-bottom: 8px;
 
 .movie-grid-container {
   margin-top: 5em;
-  background-color: rgba(0, 126, 184, 0.639);
 }
 
 .movie-grid {
@@ -553,7 +552,8 @@ margin-bottom: 8px;
 }
 
 .movie-img {
-  height: 35em;
+  height: 35rem;
+  width: 80%;
   border-radius: 3em;
 }
 
@@ -562,7 +562,7 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .movie-grid {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
