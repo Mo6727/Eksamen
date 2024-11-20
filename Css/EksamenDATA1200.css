@@ -562,7 +562,7 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1550px) {
+@media (max-width: 1000px) {
   .movie-grid {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
