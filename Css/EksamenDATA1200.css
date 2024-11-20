@@ -555,6 +555,7 @@ margin-bottom: 8px;
 .movie-img {
   height: 35em;
   border-radius: 3em;
+  width: 80%;
 }
 
 .movie-img:hover {
