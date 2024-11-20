@@ -356,6 +356,10 @@ main {
   border-radius: 8px;
 }
 
+.link-studentstories-button:hover{
+opacity: none;
+}
+
 .link-studentstories:hover {
         opacity: 0.5;
       }
@@ -364,6 +368,7 @@ main {
         text-decoration: none;
         color: black;
       }
+
 
       .h3-teknologi-og-design {
         text-decoration: underline;
