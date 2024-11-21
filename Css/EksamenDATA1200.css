@@ -582,6 +582,41 @@ font-size: 16px;
 margin-bottom: 8px;
 }
 
+/*nyhetsbrev-cotainer*/
+.nyhetsbrev-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 904px) {
+  .nyhetsbrev-container {
+      justify-content: left;
+  }
+}
+
+.nyhetsbrev-container a{
+  text-decoration: none;
+}
+
+/*nyhetsbrev-button class*/
+.nyhetsbrev-button {
+  background-color: #000;
+  color: white;
+  margin: 1.5em;
+  padding: 1.5em;
+}
+
+.nyhetsbrev-button a {
+  color: white;
+}
+
+/*nyhetsbrev class*/
+.nyhetsbrev {
+  padding: 1.5em;
+  margin: 1.5em;
+}
+
 /*top-footer-border class*/
 .top-footer-border {
   flex-grow: 1;
