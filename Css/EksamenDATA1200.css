@@ -250,7 +250,6 @@ main {
 
 .infobox-content h3 {
   text-align: center;
-  
 }
 
 .infobox-content p {
@@ -347,7 +346,7 @@ main {
 }
   
 .subject-card h3 {
-    color: #555;
+    color: rgb(85, 85, 85);
 }
   
 .card-footer {
@@ -365,6 +364,50 @@ main {
 .card-footer p {
   margin: 0;
   padding: 0;
+}
+
+/*Mer informasjon*/
+.small-infobox {
+  text-align: center;
+  margin: 4em;
+}
+
+.additional-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+}
+
+.infobox-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 0.5em;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    max-height: 8em; 
+}
+
+.infobox-card a {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 213, 0);
+  text-decoration-thickness: 3px;
+  color: rgb(0, 0, 0);
+}
+
+.infobox-card a:hover {
+  color: rgb(104, 104, 104);
+}
+
+.card-header {
+  border-bottom: 1px solid black;
+  background-color:rgb(255, 213, 0);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-header h3 {
+  margin: 0.5em;
 }
 
 /*footer start*/
