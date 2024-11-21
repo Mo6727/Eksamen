@@ -798,6 +798,7 @@ margin-bottom: 8px;
   border-style: dotted;
   border-color: #ffffff;
   border-radius: 2em;
+  background-color: rgba(0, 200, 200, 0.565);
 }
 
 .movie-img {
@@ -813,9 +814,10 @@ margin-bottom: 8px;
 
 /*grid->flex*/
 @media (max-width: 1700px) {
-  .movie-grid {
+  .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
+  padding-bottom: 2em;
   }
 }
 
