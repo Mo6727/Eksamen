@@ -223,7 +223,7 @@ main {
 
 .dropdown-infobox .dropdown-button::before {
   content: "";
-  background-image: url(plus-icon.svg);
+  background-image: url(pics/plus-icon.svg);
   background-size: contain;
   width: 2.2em;
   height: 2.2em;
@@ -235,7 +235,7 @@ main {
 }
 
 .dropdown-infobox[open] .dropdown-button::before {
-  background-image: url(minus-icon.svg);
+  background-image: url(pics/minus-icon.svg);
 }
 
 .infobox-content {margin: 2em;}
@@ -257,6 +257,29 @@ main {
   text-align: center;
   margin-top: 3em;
 }
+
+/*Hva lærer du?*/
+.learning-table {
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+.learning-table th, td {
+  padding: 0.5em;
+  border: 1px solid black;
+  vertical-align: top;
+}
+
+.learning-table th {
+  background-color: rgb(255, 213, 0);
+}
+
+.learning-table li {
+  font-weight: 500; /*Font-weight: normal ga for tynn skrift*/
+}
+
 
 /*M - Studiets oppbygging*/
 #study-layout {
@@ -287,46 +310,43 @@ main {
     background-color: rgb(229, 191, 0);
 }
 
-.study-section {
+.infobox-content .study-section {
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 2em 10em;
 }
 
 .study-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    padding: 20px;
-    background-color: #fff;
+    gap: 2rem;
+    max-width: 700px;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    border: 1px solid #000000;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .semester h2 {
     text-align: center;
     font-size: 1.5em;
     color: #333;
-    margin-bottom: 10px;
 }
   
 .subject-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around; /*Fjerne?*/
-    background-color: #fafafa;
-    border: 1px solid #000000;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
-    margin: 15px;
+    margin: 2em;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    min-height: 7em; 
+    height: 8em; 
 }
   
 .subject-card h3 {
     color: #555;
-    margin-bottom: 1.5rem;
 }
   
 .card-footer {
@@ -334,11 +354,16 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color:rgb(255, 213, 0);
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 0px 0px 20px 20px;
     margin-top: auto;
     font-weight: bold;
     color: #333;
+}
+
+.card-footer p {
+  margin: 0;
+  padding: 0;
 }
 
 /*footer start*/
