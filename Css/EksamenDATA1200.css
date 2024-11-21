@@ -189,11 +189,12 @@ main {
 .top-section-description {
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 5rem;
 }
 
-/*Alle informasjonsboksene*/
+/*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 12em; /*Margin for at details boksene skal være venstrestilt*/
+  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilt*/
 }
 
 .dropdown-infobox {
@@ -312,8 +313,7 @@ main {
 
 .infobox-content .study-section {
     text-align: center;
-    display: flex;
-    margin: 2em 10em;
+    margin: 2em;
 }
 
 .study-box {
