@@ -320,71 +320,121 @@ main {
 }
 
 
-
-
-/*article studentstories*/
+/*Artikkel studenhistorier*/
 .article-studentstories {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box; 
+  border-radius: 8px;
 }
 
+/*Tekst og bilde*/
 .content-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; /* Juster elementene øverst */
-  width: 100%; /* Sørg for at innholdet tar opp hele bredden */
+  align-items: stretch; /*Løser gap mellom bilde og tekstboksen etter sentrering av "article-studentstories" */
+  width: 100%;
   max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
   background-color: #ffd500;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 
+/* Text*/
 .section-text {
   width: 50%;
 }
 
-.image {
+.h3-teknologi-og-design {
+  text-decoration: underline;
+  font-size: 14px;
+  margin: 15px;
+  margin-left: 8px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.paragraph-studentstories {
+  margin: 15px;
+ }
+
+.link-for-text {
+  color:black;
+  text-decoration: none;
+}
+
+.link-for-text:hover {
+  color:black;
+  } 
+
+/* Image*/
+.img-smiley-box {
   width: 50%;
   border-radius: 8px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: transform .2s; /* https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 }
 
 .img-smiley {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
   border-radius: 8px;
 }
 
-.link-studentstories-button:hover{
-opacity: none;
+.img-smiley:hover{
+  transform: scale(1.1);
+  }
+
+
+/* Button*/
+.button-more-studentstories {
+background-color: #ffd500;
+transition: background-color 0.5s, color 0.5s;
+border:none;
+border-radius: 8px;
+height: 50px;
+width: 200px;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px auto;
+cursor: pointer;
 }
 
-.link-studentstories:hover {
-        opacity: 0.5;
-      }
+.button-more-studentstories:hover {
+opacity: 0.7;
+background-color: #e0c000;
+}
 
-      .link-studentstories {
-        text-decoration: none;
-        color: black;
-      }
+.button-more-studentstories:active {
+opacity: 0.7;
+transform: scale(0.98); /* Button "press" effect */
+}
 
+.link-for-button {
+color: black;
+text-decoration: none;
+}
 
-      .h3-teknologi-og-design {
-        text-decoration: underline;
-        font-size: 14px;
-        margin: 15px;
-        margin-left: 8px;
-        margin-bottom: 30px;
-      }
+.link-for-button:hover{
+  color: black;
+  text-decoration: none;
+}
 
-      .p-spå-fremtiden-med-matematikk-og-datavitenskap {
-        margin: 15px;
-      }
+/* Scaling*/
 
 @media (max-width: 768px) {
   .article-studentstories {
-    flex-direction: column; /* Hele artikkelen i én kolonne */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -394,47 +444,18 @@ opacity: none;
     width: 100%; 
   }
 
-  .section-text, .image {
-    width: 100%; /* Full bredde for tekst og bilde */
+  .section-text, .img-smiley-box {
+    width: 100%;
   }
 
   .section-text {
     order: 1;
   }
 
-  .image {
+  .img-smiley-box {
     order: 2;
   }
 
-}
-
-.button-more-studentstories {
-
-  cursor: pointer;
-  background-color: #ffd500;
-  border:none;
-  height: 50px;
-  width: 200px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  text-align: center; 
-  display: flex;
-  transition: background-color 0.5s, color 0.5s;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-}
-
-.button-more-studentstories:hover {
-  opacity: 0.7;
-  background-color: #e0c000;
-}
-
-.button-more-studentstories:active {
-  opacity: 0.7;
-  transform: scale(0.98); /* Button "press" effect */
 }
 
 @media (max-width: 768px) {
@@ -570,7 +591,7 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   .movie-grid {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
