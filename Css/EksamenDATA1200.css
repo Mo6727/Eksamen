@@ -368,14 +368,18 @@ main {
 
 /*Mer informasjon*/
 .small-infobox {
-  text-align: center;
   margin: 4em;
+  text-align: center;
+}
+
+.small-infobox li {
+  text-align: left;
 }
 
 .additional-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .infobox-card {
@@ -386,7 +390,7 @@ main {
     border-radius: 20px;
     margin: 0.5em;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    max-height: 8em; 
+    min-height: 12rem;
 }
 
 .infobox-card a {
@@ -407,8 +411,9 @@ main {
 }
 
 .card-header h3 {
-  margin: 0.5em;
+  margin: 0.5rem;
 }
+
 
 /*footer start*/
 .bottom-footer {
