@@ -191,6 +191,73 @@ main {
   font-size: 1.5em;
 }
 
+/*Alle informasjonsboksene*/
+.big-infobox {
+  margin: 2em 12em; /*Margin for at details boksene skal være venstrestilt*/
+}
+
+.dropdown-infobox {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 0.5em 0.5em 0em;
+}
+
+.dropdown-button::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-button {
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em 0.5em 0.5em 4em;
+  cursor: pointer;
+  border-radius: 20px;
+  list-style: none;
+  position: relative;
+  background-color: rgb(255, 213, 0);
+}  
+
+.dropdown-infobox[open] .dropdown-button {
+  border-bottom: 1px solid #000000;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dropdown-infobox .dropdown-button::before {
+  content: "";
+  background-image: url(plus-icon.svg);
+  background-size: contain;
+  width: 2.2em;
+  height: 2.2em;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-infobox[open] .dropdown-button::before {
+  background-image: url(minus-icon.svg);
+}
+
+.infobox-content {margin: 2em;}
+
+.infobox-content li {
+  font-weight: bold;
+  color: #333;
+  padding: 0.5em;
+  margin-left: -3em;
+  list-style-type: none;
+}
+
+.infobox-content h3 {
+  text-align: center;
+  
+}
+
+.infobox-content p {
+  text-align: center;
+  margin-top: 3em;
+}
+
 /*M - Studiets oppbygging*/
 #study-layout {
     text-align: center;
