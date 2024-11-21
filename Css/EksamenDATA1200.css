@@ -732,11 +732,12 @@ margin-bottom: 8px;
 }
 
 .movie-grid-container {
-  margin-top: 3em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   font-family: Alumni Sans Pinstripe, sans-serif;
   font-size: 2em;
+  font-weight: bold;
 }
 
 .movie-grid {
@@ -750,7 +751,9 @@ margin-bottom: 8px;
 
 .movie-img {
   height: 35rem;
-  border-radius: 3em;
+  border-radius: 2em;
+  margin-top: -0.5em;
+  margin-bottom: -1em;
 }
 
 .movie-img:hover {
@@ -758,9 +761,10 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .movie-grid {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
   }
 }
+
