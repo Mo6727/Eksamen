@@ -779,7 +779,13 @@ margin-bottom: 8px;
   height: 15em;
 }
 
-.h4 {
+.activity-h1 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
+
+.activity-h4 {
   margin-top: -1.5em;
 }
 
@@ -818,7 +824,15 @@ margin-bottom: 8px;
   .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .movie-grid, .movie-grid-container {
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  padding-bottom: 1em;
   }
 }
 
