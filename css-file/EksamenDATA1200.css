@@ -236,6 +236,7 @@ main {
 
 .infobox-content {
   margin: 2em;
+  padding-bottom: 2em;
 }
 
 .infobox-content li {
@@ -257,14 +258,11 @@ main {
 
 .infobox-aside-info {
   border-radius: 8px;
-  flex: 1;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 8px;
   padding: 1em;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  align-self: start;
-  max-width: 300px;
 }
 
 
@@ -359,7 +357,7 @@ main {
     color: rgb(85, 85, 85);
 }
   
-.card-footer { /*Laget et lignende kort med footer https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox*/
+.card-footer { /*Inspirasjon om å bruke footer til et kort fra https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,6 +373,48 @@ main {
   margin: 0;
   padding: 0;
 }
+
+/*Nytt forslag "Studiets oppbygging"*/
+.year-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.year-box {
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 1em;
+  min-width: 150px;
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.year-select {
+  display: inline-flex;
+  list-style: none;
+  background-color: rgb(255, 213, 0);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 213, 0);
+  color: rgb(0, 0, 0);
+}
+
+.year-select:hover {
+  background-color: rgb(229, 191, 0);
+}
+
+.study-layout-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 /*Mer informasjon*/
 .small-infobox {
