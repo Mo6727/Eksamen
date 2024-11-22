@@ -822,6 +822,10 @@ margin-bottom: 8px;
   line-height: 1.65em;
 }
 
+.about h3 {
+  line-height: 3em;
+}
+
 .link-kontakt-oss {
   margin-top: 1em;
   font-weight: bold;
@@ -834,6 +838,10 @@ margin-bottom: 8px;
   margin: 1.5em;
   padding: 1.5em;
   line-height: 1.65em;
+}
+
+.related-links h3 {
+  line-height: 2em;
 }
 
 /*socials class*/
