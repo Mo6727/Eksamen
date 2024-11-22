@@ -189,11 +189,12 @@ main {
 .top-section-description {
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 5rem;
 }
 
-/*Alle informasjonsboksene*/
+/*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 12em; /*Margin for at details boksene skal være venstrestilt*/
+  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilt*/
 }
 
 .dropdown-infobox {
@@ -246,17 +247,29 @@ main {
   padding: 0.5em;
   margin-left: -3em;
   list-style-type: none;
+  flex: 2;
 }
 
 .infobox-content h3 {
   text-align: center;
-  
 }
 
 .infobox-content p {
-  text-align: center;
   margin-top: 3em;
 }
+
+.infobox-aside-info {
+  border-radius: 8px;
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  align-self: start;
+  max-width: 300px;
+}
+
 
 /*Hva lærer du?*/
 .learning-table {
@@ -313,8 +326,7 @@ main {
 
 .infobox-content .study-section {
     text-align: center;
-    display: flex;
-    margin: 2em 10em;
+    margin: 2em;
 }
 
 .study-box {
@@ -347,7 +359,7 @@ main {
 }
   
 .subject-card h3 {
-    color: #555;
+    color: rgb(85, 85, 85);
 }
   
 .card-footer {
@@ -366,6 +378,57 @@ main {
   margin: 0;
   padding: 0;
 }
+
+/*Mer informasjon*/
+.small-infobox {
+  text-align: center;
+  margin: 3rem 12rem;
+}
+
+.small-infobox li {
+  text-align: left;
+}
+
+.additional-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5em;
+}
+
+.infobox-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    margin: 0.5em;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    min-height: 10rem;
+    font-weight: 500;
+}
+
+.infobox-card a {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 213, 0);
+  text-decoration-thickness: 3px;
+  color: rgb(0, 0, 0);
+}
+
+.infobox-card a:hover {
+  color: rgb(104, 104, 104);
+}
+
+.card-header {
+  background-color:rgb(255, 213, 0);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.card-header h3 {
+  margin: 0.7rem;
+}
+
 
 /*footer start*/
 .bottom-footer {
@@ -413,44 +476,94 @@ main {
 }
 
 
-
-
-/*article studentstories*/
+/*Artikkel studenhistorier*/
 .article-studentstories {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box; 
+  border-radius: 8px;
 }
 
+/*Tekst og bilde*/
 .content-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; /* Juster elementene øverst */
-  width: 100%; /* Sørg for at innholdet tar opp hele bredden */
+  align-items: stretch; /*Løser gap mellom bilde og tekstboksen etter sentrering av "article-studentstories" */
+  width: 100%;
   max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
   background-color: #ffd500;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 
+/* Text*/
 .section-text {
   width: 50%;
 }
 
-.image {
+.h3-teknologi-og-design {
+  text-decoration: underline;
+  font-size: 14px;
+  margin: 15px;
+  margin-left: 8px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.paragraph-studentstories {
+  margin: 15px;
+ }
+
+.link-for-text {
+  color:black;
+  text-decoration: none;
+}
+
+.link-for-text:hover {
+  color:black;
+  } 
+
+/* Image*/
+.img-smiley-box {
   width: 50%;
   border-radius: 8px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: transform .2s; /* https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 }
 
 .img-smiley {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
   border-radius: 8px;
 }
 
-.link-studentstories-button:hover{
-opacity: none;
+.img-smiley:hover{
+  transform: scale(1.1);
+  }
+
+
+/* Button*/
+.button-more-studentstories {
+background-color: #ffd500;
+transition: background-color 0.5s, color 0.5s;
+border:none;
+border-radius: 8px;
+height: 50px;
+width: 200px;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px auto;
+cursor: pointer;
 }
 
 .link-studentstories:hover {
@@ -461,7 +574,6 @@ opacity: none;
         text-decoration: none;
         color: black;
       }
-
 
       .h3-teknologi-og-design {
         text-decoration: underline;
@@ -474,10 +586,31 @@ opacity: none;
       .p-spå-fremtiden-med-matematikk-og-datavitenskap {
         margin: 15px;
       }
+.button-more-studentstories:hover {
+opacity: 0.7;
+background-color: #e0c000;
+}
+
+.button-more-studentstories:active {
+opacity: 0.7;
+transform: scale(0.98); /* Button "press" effect */
+}
+
+.link-for-button {
+color: black;
+text-decoration: none;
+}
+
+.link-for-button:hover{
+  color: black;
+  text-decoration: none;
+}
+
+/* Scaling*/
 
 @media (max-width: 768px) {
   .article-studentstories {
-    flex-direction: column; /* Hele artikkelen i én kolonne */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -487,47 +620,18 @@ opacity: none;
     width: 100%; 
   }
 
-  .section-text, .image {
-    width: 100%; /* Full bredde for tekst og bilde */
+  .section-text, .img-smiley-box {
+    width: 100%;
   }
 
   .section-text {
     order: 1;
   }
 
-  .image {
+  .img-smiley-box {
     order: 2;
   }
 
-}
-
-.button-more-studentstories {
-
-  cursor: pointer;
-  background-color: #ffd500;
-  border:none;
-  height: 50px;
-  width: 200px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  text-align: center; 
-  display: flex;
-  transition: background-color 0.5s, color 0.5s;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-}
-
-.button-more-studentstories:hover {
-  opacity: 0.7;
-  background-color: #e0c000;
-}
-
-.button-more-studentstories:active {
-  opacity: 0.7;
-  transform: scale(0.98); /* Button "press" effect */
 }
 
 @media (max-width: 768px) {
@@ -666,41 +770,83 @@ margin-bottom: 8px;
 }
 
 /*-----ACTIVITY PAGE-----*/
+.activity-body {
+  background-color: #009394;
+}
+
+
 /*HEADER BRUKT SAMME SOM INDEX.html*/
 .nav-container-activity {
-  background-color: rgba(0, 126, 184, 0.639);
+  background-color: #006270;
   position: absolute;
+  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226)
+}
+
+.top-section-activity {
+  margin-top: 2em;
+  text-align: center;
+  font-family: Alumni Sans Pinstripe, sans-serif;
+  font-size: 2em;
+}
+
+.popcorn-logo {
+  height: 15em;
+}
+
+.activity-h1 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
+
+.activity-h4 {
+  margin-top: -1.5em;
 }
 
 .movie-grid-container {
-  margin-top: 5em;
+  margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-family: Alumni Sans Pinstripe, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .movie-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  border-style: solid;
-  border-color:rgba(0, 126, 184, 0.639);
+  border-style: dotted;
+  border-color: #ffffff;
+  border-radius: 2em;
+  background-color: rgba(0, 200, 200, 0.565);
 }
 
 .movie-img {
   height: 35rem;
-  width: 80%;
-  border-radius: 3em;
-  width: 80%;
+  border-radius: 2em;
+  margin-top: -0.5em;
+  margin-bottom: -1em;
 }
-
-
 
 .movie-img:hover {
   opacity: 0.8;
 }
 
 /*grid->flex*/
-@media (max-width: 1500px) {
-  .movie-grid {
+@media (max-width: 1700px) {
+  .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
+  padding-bottom: 1em;
   }
 }
+
+@media (max-width: 850px) {
+  .movie-grid, .movie-grid-container {
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  padding-bottom: 1em;
+  }
+}
+
