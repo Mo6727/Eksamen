@@ -193,9 +193,9 @@ main {
 }
 
 .dropdown-infobox {
-  border: 1px solid #000000;
   border-radius: 20px;
   padding: 0.5em 0.5em 0em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-button::-webkit-details-marker {
@@ -210,11 +210,11 @@ main {
   list-style: none;
   position: relative;
   background-color: rgb(255, 213, 0);
-}  
+}
 
 .dropdown-infobox[open] .dropdown-button {
-  border-bottom: 1px solid #000000;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-infobox .dropdown-button::before {
@@ -234,7 +234,9 @@ main {
   background-image: url(../pics/minus-icon.svg);
 }
 
-.infobox-content {margin: 2em;}
+.infobox-content {
+  margin: 2em;
+}
 
 .infobox-content li {
   font-weight: 550;
@@ -658,7 +660,7 @@ margin-bottom: 8px;
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 892px) {
   .flex-container {
       flex-direction: column;
   }
@@ -702,6 +704,7 @@ margin-bottom: 8px;
   background-color: #000;
   color: white;
   margin: 1.5em;
+  margin-bottom: 0;
   padding: 1.5em;
   border-radius: 15px;
 }
@@ -714,6 +717,7 @@ margin-bottom: 8px;
 .nyhetsbrev {
   padding: 1.5em;
   margin: 1.5em;
+  margin-bottom: 0;
 }
 
 /*top-footer-border class*/
