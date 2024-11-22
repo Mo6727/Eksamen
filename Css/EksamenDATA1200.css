@@ -983,3 +983,17 @@ color: black;
     font-size: 1em; /* Adjust caption size for smaller screens */
   }
 }
+
+.filmklubb-bottom-text {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 1.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border-top: solid;
+  border-color: rgb(0, 98, 112);
+}
+
+.italic-text {
+  font-style: italic;
+}
