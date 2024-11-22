@@ -868,7 +868,8 @@ margin-bottom: 8px;
 
 .movie-img {
   height: 35rem;
-  border-radius: 3em;
+  border-radius: 2.5em;
+  margin-bottom: -1em;
 }
 
 .movie-img:hover {
@@ -884,7 +885,7 @@ margin-bottom: 8px;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr;
   flex-direction: column;
@@ -895,8 +896,8 @@ margin-bottom: 8px;
 
 /*table*/
 
-.table{
-  margin: 30px;
+.table {
+  margin-top: 5em;
 }
 
 .table-filmanmeldelser {
@@ -920,7 +921,7 @@ text-align: left;
 }
 
 .table-filmanmeldelser tbody tr:nth-child(odd) { 
-   background-color: #20c7e0; 
+   background-color: #20c6e065; 
   } 
 .table-filmanmeldelser tr:nth-child(even) { 
    background-color: #206b76;}
@@ -934,7 +935,7 @@ text-align: left;
 }
 
 .table-filmanmeldelser th {
-background-color: #f4f4f4;
+background-color: #9c87f1cc;
 font-weight: bold;
 vertical-align: bottom;
 }
