@@ -198,9 +198,9 @@ main {
 }
 
 .dropdown-infobox {
-  border: 1px solid #000000;
   border-radius: 20px;
   padding: 0.5em 0.5em 0em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-button::-webkit-details-marker {
@@ -215,11 +215,11 @@ main {
   list-style: none;
   position: relative;
   background-color: rgb(255, 213, 0);
-}  
+}
 
 .dropdown-infobox[open] .dropdown-button {
-  border-bottom: 1px solid #000000;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-infobox .dropdown-button::before {
@@ -239,7 +239,9 @@ main {
   background-image: url(../pics/minus-icon.svg);
 }
 
-.infobox-content {margin: 2em;}
+.infobox-content {
+  margin: 2em;
+}
 
 .infobox-content li {
   font-weight: 550;
