@@ -984,6 +984,19 @@ color: black;
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .table-filmanmeldelser {
+    font-size: 0.8em; /* Reduce font size further for smaller screens */
+  }
+  .table-filmanmeldelser th,
+  .table-filmanmeldelser td {
+    padding: 0.3em; /* Further reduce padding */
+  }
+  .table-filmanmeldelser caption {
+    font-size: 1em; /* Adjust caption size for smaller screens */
+  }
+}
+
 .filmklubb-bottom-text {
   margin-top: 3em;
   text-align: center;
@@ -996,4 +1009,151 @@ color: black;
 
 .italic-text {
   font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer start*/
+.footer-activity-page {
+  background-color: #006270;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100;
+  margin-top: 2em;
+  text-align: center;
+  font-family: Alumni Sans Pinstripe, sans-serif;
+}
+
+/*footer ul (unordered list) decorations turned off*/
+.footer-activity-page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*flex-container class modificatrions*/
+.flex-container-activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 892px) {
+  .flex-container-activity {
+      flex-direction: column;
+  }
+}
+
+.flex-container-activity h3{
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.flex-container-activity a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease;
+}
+
+.flex-container-activity ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/*nyhetsbrev-cotainer*/
+.nyhetsbrev-container-activity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 904px) {
+  .nyhetsbrev-container-activity {
+      justify-content: left;
+  }
+}
+
+.nyhetsbrev-container-activity a{
+  text-decoration: none;
+}
+
+/*nyhetsbrev-button-activity class*/
+.nyhetsbrev-button-activity {
+  background-color: #a80d0d;
+  color: black;
+  margin: 20px;
+  margin-bottom: 20px;
+  padding: 1.5em;
+  border-radius: 15px;
+}
+
+.nyhetsbrev-button-activity a {
+  color: white;
+}
+
+/*nyhetsbrev class*/
+.nyhetsbrev-activity {
+  padding: 1.5em;
+  margin: 1.5em;
+  margin-bottom: 0;
+}
+
+/*top-footer-border class*/
+.top-footer-border {
+  flex-grow: 1;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+/*about class*/
+.about-activity {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: 1.5em;
+  padding: 1.5em;
+  line-height: 1.65em;
+}
+
+.h3-kontakt-oss {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 0.9em;
+}
+
+.kontakt-oss-tekst li{
+font-size: 2em;
+font-weight: bold;
+line-height: 1.65em;
+}
+
+.link-kontakt-oss-activity {
+  font-weight: bold;
+}
+
+/*socials class*/
+.socials-activity {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: 1.5em;
+  padding: 1.5em;
+  line-height: 2.5em;
 }
