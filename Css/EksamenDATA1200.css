@@ -11,12 +11,6 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
-.header {
-  max-width: min(96%, 1140px);
-  margin: 0 auto;
-  z-index: 10;
-}
-
 /*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
 .nav-container, .nav-container-activity {
   display: flex;
@@ -31,6 +25,7 @@ main {
   right: 0;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
+  z-index: 10;
 }
 
 .left-nav {
@@ -799,8 +794,9 @@ margin-bottom: 8px;
   margin-bottom: -0.5em;
 }
 
-.activity-h4 {
-  margin-top: -1.5em;
+.film-quote {
+  margin-bottom: -1em;
+  font-weight: bold;
 }
 
 .movie-grid-container {
