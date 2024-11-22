@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="nav-container">
         <ul class="left-nav">
             <li><a href="https://www.oslomet.no/"><img class="oslomet-logo" src="pictures/Logo_of_Oslo_Metropolitan_University.svg" alt="OsloMetLogo"></a></li>
@@ -96,34 +96,6 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
   </details>
 
 </section>
-
-
-<section class="big-infobox">
-  <details class="dropdown-infobox">
-    <summary class="dropdown-button"><h2>Hvordan foregår undervisningen?</h2></summary>
-      <article class="infobox-content">
-<ul>
-  <h3>Undervisningen er en kombinasjon av:</h3>
-  <li>Prosjektarbeid</li>
-  <li>Workshop</li>
-  <li>Presentasjoner</li>
-  <li>Veiledninger</li>
-  <li>Diskusjoner og refleksjoner</li>
-  <li>Forelesninger</li>
-  <li>Selvstudier</li>
-  <li>Gruppearbeid</li>
-  <li>Arbeidslivsrelevant bacheloroppgave</li>
-</ul>
-<aside class="infobox-aside-info">
-  <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.</p>
-</aside>
-  
- 
-    </article>
-  </details>
-
-</section>
-
 
 <!--Hva vil du lære?-->
 <section class="big-infobox">
@@ -424,14 +396,6 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
     </section>
   </section>
 
-  <!--Kontakt oss - Skal endres-->
-  <section class="small-infobox">
-    <article class="contact-us">
-      
-    </article>
-
-  </section>
-
     <!-- article-studentstories-->
     <article class="article-studentstories">
       <h2>Studenthistorier</h2>
@@ -469,8 +433,8 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
   
 
     <!-- Scrollmenu related programs-->
-    <section class="section-scrollmenu-related-programs">
-      <h2>Du er kanskje også interessert i:</h2>
+        <section class="section-scrollmenu-related-programs">
+          <h2>Du er kanskje også interessert i:</h2>
           <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
             <div class="program-item">
               <strong>Anvendt datateknologi</strong>
@@ -573,20 +537,18 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
     </main>
     
     <footer class="bottom-footer">
-      <section class="nyhetsbrev-container"> <!--En container for nyhetsbrev delen, brukes for å ustere hvordan itemsene skal plaserers (flex)-->
-        <div class="nyhetsbrev"> <!--En klasse for å justere itemet (margin og padding)-->
+      <section class="nyhetsbrev-container">
+        <div class="nyhetsbrev">
             <h3>Hold deg oppdatert på hva som skjer på OsloMet.</h3>
         </div>
-        <a href="https://www.oslomet.no/nyhetsbrev">
-          <div class="nyhetsbrev-button"> <!--Justere utsende (color, margin, padding, osv)-->
-              <h3>Abonner på vårt nyhetsbrev!</h3>
-          </div>
-        </a>
+        <a href="#"><div class="nyhetsbrev-button">
+                <h3>Abonner på vårt nyhetsbrev!</h3>
+        </div></a>
       </section>
       
-      <section class="flex-container"> <!--en flex container-->
-          <div class="top-footer-border"></div> <!--Lager en indepentent border (fra andre items i som kunne vært i samme section) som let kan endres på-->
-      </section>
+        <section class="flex-container">
+            <div class="top-footer-border"></div>
+        </section>
 
       <section class="flex-container"> <!--samme flex container for å gjenbruke klassen-->
           <div class="about"> <!--justerer utsene til item-et-->
@@ -638,7 +600,7 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
                     <img src="pictures/icon-instagram.svg" alt="Instagram icon"> Instagram
                   </a>
                 </li>
-              </ul>
+                </ul>
             </div>
         </section>
     </footer>
