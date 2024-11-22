@@ -663,7 +663,7 @@ margin-bottom: 8px;
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 892px) {
   .flex-container {
       flex-direction: column;
   }
@@ -707,6 +707,7 @@ margin-bottom: 8px;
   background-color: #000;
   color: white;
   margin: 1.5em;
+  margin-bottom: 0;
   padding: 1.5em;
   border-radius: 15px;
 }
@@ -719,6 +720,7 @@ margin-bottom: 8px;
 .nyhetsbrev {
   padding: 1.5em;
   margin: 1.5em;
+  margin-bottom: 0;
 }
 
 /*top-footer-border class*/
