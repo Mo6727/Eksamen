@@ -869,6 +869,7 @@ margin-bottom: 8px;
 .movie-img {
   height: 35rem;
   border-radius: 3em;
+  margin-bottom: -1em;
 }
 
 .movie-img:hover {
