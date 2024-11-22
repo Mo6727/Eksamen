@@ -11,12 +11,6 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
-.header {
-  max-width: min(96%, 1140px);
-  margin: 0 auto;
-  z-index: 10;
-}
-
 /*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
 .nav-container, .nav-container-activity {
   display: flex;
@@ -31,6 +25,7 @@ main {
   right: 0;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
+  z-index: 10;
 }
 
 .left-nav {
@@ -189,17 +184,18 @@ main {
 .top-section-description {
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 5rem;
 }
 
-/*Alle informasjonsboksene*/
+/*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 12em; /*Margin for at details boksene skal være venstrestilt*/
+  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilt*/
 }
 
 .dropdown-infobox {
-  border: 1px solid #000000;
   border-radius: 20px;
   padding: 0.5em 0.5em 0em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-button::-webkit-details-marker {
@@ -214,16 +210,16 @@ main {
   list-style: none;
   position: relative;
   background-color: rgb(255, 213, 0);
-}  
+}
 
 .dropdown-infobox[open] .dropdown-button {
-  border-bottom: 1px solid #000000;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-infobox .dropdown-button::before {
   content: "";
-  background-image: url(pics/plus-icon.svg);
+  background-image: url(../pics/plus-icon.svg);
   background-size: contain;
   width: 2.2em;
   height: 2.2em;
@@ -235,17 +231,20 @@ main {
 }
 
 .dropdown-infobox[open] .dropdown-button::before {
-  background-image: url(pics/minus-icon.svg);
+  background-image: url(../pics/minus-icon.svg);
 }
 
-.infobox-content {margin: 2em;}
+.infobox-content {
+  margin: 2em;
+}
 
 .infobox-content li {
-  font-weight: bold;
+  font-weight: 550;
   color: #333;
   padding: 0.5em;
   margin-left: -3em;
   list-style-type: none;
+  flex: 2;
 }
 
 .infobox-content h3 {
@@ -253,9 +252,21 @@ main {
 }
 
 .infobox-content p {
-  text-align: center;
   margin-top: 3em;
 }
+
+.infobox-aside-info {
+  border-radius: 8px;
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  align-self: start;
+  max-width: 300px;
+}
+
 
 /*Hva lærer du?*/
 .learning-table {
@@ -312,8 +323,7 @@ main {
 
 .infobox-content .study-section {
     text-align: center;
-    display: flex;
-    margin: 2em 10em;
+    margin: 2em;
 }
 
 .study-box {
@@ -369,24 +379,29 @@ main {
 /*Mer informasjon*/
 .small-infobox {
   text-align: center;
-  margin: 4em;
+  margin: 3rem 12rem;
+}
+
+.small-infobox li {
+  text-align: left;
 }
 
 .additional-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5em;
 }
 
 .infobox-card {
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     margin: 0.5em;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    max-height: 8em; 
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    min-height: 10rem;
+    font-weight: 500;
 }
 
 .infobox-card a {
@@ -401,9 +416,10 @@ main {
 }
 
 .card-header {
-  border-bottom: 1px solid black;
   background-color:rgb(255, 213, 0);
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .card-header h3 {
@@ -666,6 +682,51 @@ font-size: 16px;
 margin-bottom: 8px;
 }
 
+/*footer start*/
+.bottom-footer {
+  background-color: #ffd500;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100;
+}
+
+/*footer ul (unordered list) decorations turned off*/
+.bottom-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*flex-container class modificatrions*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 892px) {
+  .flex-container {
+      flex-direction: column;
+  }
+}
+
+.flex-container h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.flex-container a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease;
+}
+
+.flex-container ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 /*nyhetsbrev-cotainer*/
 .nyhetsbrev-container {
   display: flex;
@@ -688,7 +749,9 @@ margin-bottom: 8px;
   background-color: #000;
   color: white;
   margin: 1.5em;
+  margin-bottom: 0;
   padding: 1.5em;
+  border-radius: 15px;
 }
 
 .nyhetsbrev-button a {
@@ -699,6 +762,7 @@ margin-bottom: 8px;
 .nyhetsbrev {
   padding: 1.5em;
   margin: 1.5em;
+  margin-bottom: 0;
 }
 
 /*top-footer-border class*/
@@ -773,8 +837,15 @@ margin-bottom: 8px;
   height: 15em;
 }
 
-.h4 {
-  margin-top: -1.5em;
+.activity-h1 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
+
+.film-quote {
+  margin-bottom: -1em;
+  font-weight: bold;
 }
 
 .movie-grid-container {
@@ -792,6 +863,7 @@ margin-bottom: 8px;
   border-style: dotted;
   border-color: #ffffff;
   border-radius: 2em;
+  background-color: rgba(0, 200, 200, 0.565);
 }
 
 .movie-img {
@@ -804,10 +876,19 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1000px) {
-  .movie-grid {
+@media (max-width: 1700px) {
+  .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
+  padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .movie-grid, .movie-grid-container {
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  padding-bottom: 1em;
   }
 }
 
