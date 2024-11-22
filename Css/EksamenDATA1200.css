@@ -224,7 +224,7 @@ main {
 
 .dropdown-infobox .dropdown-button::before {
   content: "";
-  background-image: url(pics/plus-icon.svg);
+  background-image: url(../pics/plus-icon.svg);
   background-size: contain;
   width: 2.2em;
   height: 2.2em;
@@ -236,13 +236,13 @@ main {
 }
 
 .dropdown-infobox[open] .dropdown-button::before {
-  background-image: url(pics/minus-icon.svg);
+  background-image: url(../pics/minus-icon.svg);
 }
 
 .infobox-content {margin: 2em;}
 
 .infobox-content li {
-  font-weight: bold;
+  font-weight: 550;
   color: #333;
   padding: 0.5em;
   margin-left: -3em;
