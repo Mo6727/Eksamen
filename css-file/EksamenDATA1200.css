@@ -202,7 +202,7 @@ main {
   display: none;
 }
 
-.dropdown-button { /*Tok inspirasjon fra https://www.sitepoint.com/style-html-details-element/ for å lage details*/
+.dropdown-button {
   margin: -0.5em -0.5em 0;
   padding: 0.5em 0.5em 0.5em 4em;
   cursor: pointer;
