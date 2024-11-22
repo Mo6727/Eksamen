@@ -202,7 +202,7 @@ main {
   display: none;
 }
 
-.dropdown-button { /*Tok inspirasjon fra https://www.sitepoint.com/style-html-details-element/ for å lage details*/
+.dropdown-button { /*Tok inspirasjon fra https://www.sitepoint.com/style-html-details-element/ og https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details for å lage details*/
   margin: -0.5em -0.5em 0;
   padding: 0.5em 0.5em 0.5em 4em;
   cursor: pointer;
@@ -359,7 +359,7 @@ main {
     color: rgb(85, 85, 85);
 }
   
-.card-footer {
+.card-footer { /*Laget et lignende kort med footer https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox*/
     display: flex;
     justify-content: space-between;
     align-items: center;
