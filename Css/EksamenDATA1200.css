@@ -368,18 +368,14 @@ main {
 
 /*Mer informasjon*/
 .small-infobox {
-  margin: 4em;
   text-align: center;
-}
-
-.small-infobox li {
-  text-align: left;
+  margin: 4em;
 }
 
 .additional-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 80%;
 }
 
 .infobox-card {
@@ -390,7 +386,7 @@ main {
     border-radius: 20px;
     margin: 0.5em;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    min-height: 12rem;
+    max-height: 8em; 
 }
 
 .infobox-card a {
@@ -411,9 +407,8 @@ main {
 }
 
 .card-header h3 {
-  margin: 0.5rem;
+  margin: 0.5em;
 }
-
 
 /*footer start*/
 .bottom-footer {
@@ -783,12 +778,11 @@ margin-bottom: 8px;
 }
 
 .movie-grid-container {
-  margin-top: 2em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
   font-family: Alumni Sans Pinstripe, sans-serif;
   font-size: 2em;
-  font-weight: bold;
 }
 
 .movie-grid {
@@ -802,9 +796,7 @@ margin-bottom: 8px;
 
 .movie-img {
   height: 35rem;
-  border-radius: 2em;
-  margin-top: -0.5em;
-  margin-bottom: -1em;
+  border-radius: 3em;
 }
 
 .movie-img:hover {
@@ -812,10 +804,101 @@ margin-bottom: 8px;
 }
 
 /*grid->flex*/
-@media (max-width: 1700px) {
+@media (max-width: 1000px) {
   .movie-grid {
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
   }
 }
 
+
+/*table*/
+
+.table{
+  margin: 30px;
+}
+
+.table-filmanmeldelser {
+  margin: auto;
+  border-collapse: collapse; 
+  border: 1px solid #ddd;
+  width: 100%; /* Full width by default */
+  max-width: 1200px;
+  font-size: 1.5em; 
+  overflow: hidden;
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/*heading filmanmeldelser*/
+.table-filmanmeldelser caption {
+font-weight: bold;
+margin-bottom: 0.5em;
+text-align: left;
+}
+
+.table-filmanmeldelser tbody tr:nth-child(odd) { 
+   background-color: #20c7e0; 
+  } 
+.table-filmanmeldelser tr:nth-child(even) { 
+   background-color: #206b76;}
+
+
+.table-filmanmeldelser th,
+.table-filmanmeldelser td {
+border: 1px solid #ddd;
+padding: 0.5em;
+text-align: left;
+}
+
+.table-filmanmeldelser th {
+background-color: #f4f4f4;
+font-weight: bold;
+vertical-align: bottom;
+}
+
+thead th {
+  background-color: #fff; /* Explicit background for header to align with border-radius */
+  border-top-left-radius: 12px; /* Top left corner */
+  border-top-right-radius: 12px; /* Top right corner */
+  border: none}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px; /* Bottom left corner */
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px; /* Bottom right corner */
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px; /* Bottom left corner */
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;}
+
+/* Link */
+.table-filmanmeldelser a {
+color: black; 
+text-decoration: none;
+}
+
+td a:hover {
+text-decoration: none;
+color: black;
+}    
+
+@media screen and (max-width: 768px) {
+  .table-filmanmeldelser {
+    font-size: 0.8em; /* Reduce font size further for smaller screens */
+  }
+  .table-filmanmeldelser th,
+  .table-filmanmeldelser td {
+    padding: 0.3em; /* Further reduce padding */
+  }
+  .table-filmanmeldelser caption {
+    font-size: 1em; /* Adjust caption size for smaller screens */
+  }
+}
