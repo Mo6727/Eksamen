@@ -287,7 +287,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .dropdown-infobox .dropdown-button::before {
   content: "";
-  background-image: url(../pictures/plus-icon.svg);
+  background-image: url(../pictures/plus-icon.svg); /*Eget ikon laget med Figma*/
   background-size: contain;
   width: 2.2em;
   height: 2.2em;
@@ -299,12 +299,13 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 .dropdown-infobox[open] .dropdown-button::before {
-  background-image: url(../pictures/minus-icon.svg);
+  background-image: url(../pictures/minus-icon.svg); /*Eget ikon laget med Figma*/
 }
 
 .infobox-content {
   margin: 2em;
   padding-bottom: 2em;
+  text-align: center;
 }
 
 .infobox-content li {
@@ -314,14 +315,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin-left: -3em;
   list-style-type: none;
   flex: 2;
-}
-
-.infobox-content h3 {
-  text-align: center;
-}
-
-.infobox-content p {
-  margin-top: 3em;
+  text-align: left;
 }
 
 .infobox-aside-info {
@@ -404,6 +398,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 0px 0px;
   background-color: rgb(246, 246, 246);
+  padding-bottom: 2em;
 }
 
 .semester h2 {
