@@ -327,8 +327,12 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.infobox-title {
-  font-size: 1.3em;
+.hidden-content {
+  display: hidden;
+}
+
+.hidden-content h3 {
+  font-size: 1.4em;
   padding-top: 1em;
 }
 
@@ -359,22 +363,24 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 /*Studiets oppbygging - Ny versjon*/
 .year-button {
-  padding: 1rem 2rem;
-  margin: 3rem;
+  padding: 0.8rem 2rem;
+  justify-self: center;
+  margin: 1rem;
   font-weight: bold;
   font-size: 1.2em;
   cursor: pointer;
   background-color: rgb(255, 213, 0);
   color: rgb(0, 0, 0);
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
+
 }
 
 .year-button:hover {
   background-color: rgb(229, 191, 0);
 }
 
-.hidden-content { /*Lagde en klasse slik at alt innhold under de tre "year" er hidden*/
+.year-content { /*Lagde en klasse slik at alt innhold under de tre "year" ikke viser noe*/
   display: none;
 }
 
@@ -386,10 +392,8 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .study-section {    
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 1000px;
-  text-align: center;
-  padding: 1em;
+  gap: 15px;
+  max-width: 900px;
 }
 
 .semester {
@@ -412,10 +416,10 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.9em;
   flex-direction: column;
   border-radius: 20px;
-  background-color: white;
-  margin: 1em 4.5em;
+  background-color: rgb(255, 255, 255);
+  margin: 1em 5em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  min-height: 8em;
+  min-height: 7.5em;
   transition: transform 0.7s;
 }
 
