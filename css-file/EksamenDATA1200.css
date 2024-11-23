@@ -189,7 +189,7 @@ main {
 
 /*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilt*/
+  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilte*/
 }
 
 .dropdown-infobox {
@@ -265,6 +265,11 @@ main {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.infobox-title {
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+
 
 /*Hva lærer du?*/
 .learning-table {
@@ -290,131 +295,92 @@ main {
 }
 
 
-/*M - Studiets oppbygging*/
-#study-layout {
-    text-align: center;
-    margin: 5em;
+/*Studiets oppbygging - Ny versjon*/
+.year-button {
+  padding: 1rem 2rem;
+  margin: 3rem;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: rgb(255, 213, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-.year-content {
-    display: none;
+.year-button:hover {
+  background-color: rgb(229, 191, 0);
 }
 
-#year1:target, #year2:target, #year3:target {
-    display: block;
+.hidden-content { /*Lagde en klasse slik at alt innhold under de tre "year" er hidden*/
+  display: none;
 }
 
-.study-button {
-    padding: 1rem 2rem;
-    margin: 1rem;
-    font-size: 1.2em;
-    cursor: pointer;
-    background-color: rgb(255, 213, 0);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 10px;
+
+#year1:target, #year2:target, #year3:target { /*Target https://www.w3schools.com/cssref/sel_target.php*/
+  display: block; /*Viser alt etter tilhørende link er trykket på*/
 }
 
-.study-button:hover {
-    background-color: rgb(229, 191, 0);
+.study-section {    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  text-align: center;
+  padding: 1em;
 }
 
-.infobox-content .study-section {
-    text-align: center;
-    margin: 2em;
-}
-
-.study-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 700px;
-    padding: 1em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    border: 1px solid rgb(0, 0, 0);
+.semester {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(246, 246, 246);
 }
 
 .semester h2 {
-    text-align: center;
-    font-size: 1.5em;
-    color: #333;
+  color: rgb(51, 51, 51);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(175, 175, 175);
 }
-  
+
 .subject-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /*Fjerne?*/
-    background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    margin: 2em;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    height: 8em; 
+  display: flex;
+  font-size: 0.9em;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  margin: 1em 4.5em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  min-height: 8em;
+  transition: transform 0.7s;
 }
-  
+
+.subject-card:hover {
+  transform: scale(1.07); /*Transform https://www.w3schools.com/cssref/css3_pr_transform.php*/
+  cursor: pointer;
+}
+
 .subject-card h3 {
-    color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
-  
-.card-footer { /*Inspirasjon om å bruke footer til et kort fra https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:rgb(255, 213, 0);
-    padding: 0.6rem;
-    border-radius: 0px 0px 20px 20px;
-    margin-top: auto;
-    font-weight: bold;
-    color: #333;
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 213, 0);
+  padding: 0.6rem;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: auto; /*Slik at footer forblir på bunnen av subject-card*/
+  font-weight: bold;
+  color: rgb(51, 51, 51);
 }
 
 .card-footer p {
   margin: 0;
   padding: 0;
 }
-
-/*Nytt forslag "Studiets oppbygging"*/
-.year-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.year-box {
-  flex: 0 1 auto;
-  text-align: center;
-  padding: 1em;
-  min-width: 150px;
-  max-width: 200px;
-  align-items: center;
-  justify-content: center;
-}
-
-.year-select {
-  display: inline-flex;
-  list-style: none;
-  background-color: rgb(255, 213, 0);
-  border-radius: 15px;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  font-size: 1.3em;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: rgb(255, 213, 0);
-  color: rgb(0, 0, 0);
-}
-
-.year-select:hover {
-  background-color: rgb(229, 191, 0);
-}
-
-.study-layout-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 
 /*Mer informasjon*/
 .small-infobox {
