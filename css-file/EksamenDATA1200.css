@@ -347,7 +347,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 .learning-table li {
-  font-weight: 500; /*Font-weight: normal ga for tynn skrift*/
+  font-weight: 500;
 }
 
 
@@ -363,14 +363,13 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   color: rgb(0, 0, 0);
   border-radius: 15px;
   text-decoration: none;
-
 }
 
 .year-button:hover {
   background-color: rgb(229, 191, 0);
 }
 
-.year-content { /*Lagde en klasse slik at alt innhold under de tre "year" ikke viser noe*/
+.year-content { /*Lagde en klasse slik at alt innhold under de tre "year" ikke viser innholdet enda*/
   display: none;
 }
 
@@ -378,7 +377,6 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 1.4em;
   padding-top: 1em;
 }
-
 
 #year1:target, #year2:target, #year3:target {   /*Target https://www.w3schools.com/cssref/sel_target.php*/
   display: block;                               /*Viser alt etter tilhørende link er trykket på*/
@@ -388,34 +386,44 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .study-section {    
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
   max-width: 900px;
+  margin: 0em 5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .semester {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 0px 0px;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(239, 239, 239);
   padding-bottom: 2em;
 }
 
+.semester:first-child {
+  border-right: 2px solid rgb(175, 175, 175);
+  border-radius: 10px 0px 0px 0px;
+} 
+
+.semester:last-child {
+  border-radius: 0px 10px 0px 0px;
+} 
+
 .semester h2 {
-  color: rgb(51, 51, 51);
+  color: rgb(67, 67, 67);
+  font-size: 1.3em;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgb(175, 175, 175);
 }
 
 .subject-card {
   display: flex;
-  font-size: 0.9em;
   flex-direction: column;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
-  margin: 1em 5em;
+  margin: 1em 3em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  min-height: 7.5em;
+  min-height: 8em;
   transition: transform 0.7s;
 }
 
@@ -426,13 +434,15 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .subject-card h3 {
   color: rgb(85, 85, 85);
+  font-size: 1em;
+  padding-top: 0.5em;
 }
 
 .card-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: rgb(255, 213, 0);
+  font-size: 0.9em;
   padding: 0.6rem;
   border-radius: 0px 0px 20px 20px;
   margin-top: auto; /*Slik at footer forblir på bunnen av subject-card*/
@@ -444,6 +454,65 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin: 0;
   padding: 0;
 }
+
+/*Emnegrupper til Studiets oppbygging*/
+/*
+
+.subject-select {
+  cursor: pointer;
+  background-color: rgb(207, 207, 207);
+  border: 1px solid black;
+  
+}
+
+.subject-group {
+  border-radius: 20px;
+  padding: 0.5em 0.5em 0em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+*/
+
+.subject-group-section .semester {
+  border-radius: 0;
+}
+
+
+.subject-select::-webkit-details-marker {
+  display: none;
+}
+
+.subject-select { /*Tok inspirasjon fra https://www.sitepoint.com/style-html-details-element/ og https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details for å lage details*/
+  margin: 0em 5em;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  background-color: rgb(255, 213, 0);
+  border: 1px solid rgb(255, 213, 0);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
+}
+
+.subject-group[open] .subject-select {
+
+}
+
+.subject-group .subject-select::before {
+  content: "";
+  background-image: url(../pictures/plus-icon.svg); /*Eget ikon laget med Figma*/
+  background-size: contain;
+  width: 2.2em;
+  height: 2.2em;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.subject-group[open] .subject-select::before {
+  background-image: url(../pictures/minus-icon.svg); /*Eget ikon laget med Figma*/
+}
+
 
 /*Mer informasjon*/
 .small-infobox {
