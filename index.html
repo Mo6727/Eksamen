@@ -20,9 +20,10 @@
             <li><a href="github.html" class="nav-link">GitHub</a></li>
             <li><a href="hobby.html" class="nav-link">Activity</a></li>
             <li><a href="https://www.oslomet.no/en" class="view-nav-link">EN</a></li>
-            <li class="dropdown">
-                <a class="dropbtn">MENY<i class="fa-caret-down"></i></a>
-            <ul class="dropdown-content">
+            <li class="dropdown-click">
+              <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+              <label for="dropdown-toggle" class="dropbtn-click">MENY</label>
+              <ul class="dropdown-click-content">
                 <li><a href="https://www.oslomet.no/studier">Studier</a></li>
                 <li><a href="https://www.oslomet.no/forskning">Forskningen vår</a></li>
                 <li><a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a></li>
@@ -33,15 +34,29 @@
                 <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="hobby.html">Activity</a></li>
-            </ul>
+              </ul>
             </li>
         </ul>
     </nav>
 </header>
 <!--Brukt kilde til å lage nav-bar.
 kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-Brukt w3school for å lage hover->dropdownmeny
-Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
+Brukt chatgpt for å lage dropdownmeny med click:
+Kilde chatgpt:
+  Dropdown Structure
+<div class="dropdown">
+  Hidden Checkbox
+<input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+  Label acts as the toggle button
+<label for="dropdown-toggle" class="dropbtn">Click Me</label>
+  Dropdown Content
+<ul class="dropdown-content">
+            <li><a href="#option1">Option 1</a></li>
+            <li><a href="#option2">Option 2</a></li>
+            <li><a href="#option3">Option 3</a></li>
+        </ul>
+    </div>
+-->
 
     <main>
         <section class="top-section">
