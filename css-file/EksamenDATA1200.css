@@ -456,32 +456,15 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Emnegrupper til Studiets oppbygging*/
-/*
-
-.subject-select {
-  cursor: pointer;
-  background-color: rgb(207, 207, 207);
-  border: 1px solid black;
-  
-}
-
-.subject-group {
-  border-radius: 20px;
-  padding: 0.5em 0.5em 0em;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-*/
-
 .subject-group-section .semester {
   border-radius: 0;
 }
-
 
 .subject-select::-webkit-details-marker {
   display: none;
 }
 
-.subject-select { /*Tok inspirasjon fra https://www.sitepoint.com/style-html-details-element/ og https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details for å lage details*/
+.subject-select {
   margin: 0em 5em;
   cursor: pointer;
   list-style: none;
@@ -489,10 +472,6 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   background-color: rgb(255, 213, 0);
   border: 1px solid rgb(255, 213, 0);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
-}
-
-.subject-group[open] .subject-select {
-
 }
 
 .subject-group .subject-select::before {
