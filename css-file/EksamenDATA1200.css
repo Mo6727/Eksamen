@@ -327,16 +327,6 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.hidden-content {
-  display: hidden;
-}
-
-.hidden-content h3 {
-  font-size: 1.4em;
-  padding-top: 1em;
-}
-
-
 /*Hva lærer du?*/
 .learning-table {
   width: 90%;
@@ -384,9 +374,15 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   display: none;
 }
 
+.year-content > h3:first-child {
+  font-size: 1.4em;
+  padding-top: 1em;
+}
 
-#year1:target, #year2:target, #year3:target { /*Target https://www.w3schools.com/cssref/sel_target.php*/
-  display: block; /*Viser alt etter tilhørende link er trykket på*/
+
+#year1:target, #year2:target, #year3:target {   /*Target https://www.w3schools.com/cssref/sel_target.php*/
+  display: block;                               /*Viser alt etter tilhørende link er trykket på*/
+  scroll-margin-top: 180px;                     /*For å forhindre hopping når linken trykkes på https://www.w3schools.com/CSSref/css_pr_scroll-margin-top.php*/
 }
 
 .study-section {    
