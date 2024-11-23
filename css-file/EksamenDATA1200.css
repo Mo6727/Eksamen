@@ -60,7 +60,7 @@ main {
   margin-right: 1.5em;
 }
 
-.view-nav-link:hover, .nav-link:hover, .dropdown:hover, .dropdown-click:hover {
+.view-nav-link:hover, .nav-link:hover, .dropdown-click:hover {
   color: white;
   cursor: pointer;
 }
@@ -76,6 +76,9 @@ main {
   .oslomet-logo, .view-nav-link {
     height: 2em;
     padding: 0;
+  }
+  .dropdown-click-content {
+    margin-top: 0.5em !important;
   }
 }
 
@@ -110,7 +113,6 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   display: none;
   position: absolute;
   background-color: rgb(255, 213, 0);
-  width: 96%;
   left: 0;
   right:0;
   box-shadow: 0em 1em 1em 0em rgba(0,0,0,0.1);
@@ -119,7 +121,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1.2em;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .dropdown-click-content a {
