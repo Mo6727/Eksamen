@@ -286,6 +286,21 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   flex-direction: column;
 }
 
+.semester:first-child {
+  border-right: 0;
+  border-radius: 10px 10px 0px 0px;
+} 
+
+.semester:last-child {
+  border-radius: 0px 10px 0px 0px;
+} 
+
+.infobox-content .year-button {
+  margin: 0.4em;
+  padding: 0.7em;
+  font-size: 0.8em;
+}
+
 }
 
 
@@ -305,7 +320,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 .infobox-content .year-button {
-  margin: 0.2em;
+  margin: 0.4em;
   padding: 0.7em;
   font-size: 0.8em;
 }
@@ -1060,6 +1075,15 @@ margin-bottom: 8px;
   position: absolute;
   box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226)
 }
+
+.activity-body .view-nav-link, .nav-link, .right-nav, .dropdown-click-content a {
+  color: rgb(255, 255, 255);
+}
+
+.activity-body .view-nav-link:hover, .nav-link:hover, .right-nav:hover .dropdown-click-content a:hover {
+  color: rgb(0, 200, 200);
+}
+
 
 .activity-body .nav-logo {
   height: 4em;
