@@ -264,7 +264,15 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 /*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilte*/
+  margin: 2em auto;
+  max-width: 60%;
+}
+
+@media (max-width: 650px) {
+.big-infobox {
+  max-width: 90%;
+}
+
 }
 
 .dropdown-infobox {
@@ -990,6 +998,7 @@ margin-bottom: 8px;
 
 .popcorn-logo {
   height: 15em;
+  width: 15em;
 }
 
 .activity-body h1 {
@@ -1025,6 +1034,7 @@ margin-bottom: 8px;
   height: 35rem;
   border-radius: 2.5em;
   margin-bottom: -1em;
+  margin-top: -0.5em;
 }
 
 .movie-img:hover {
