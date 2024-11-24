@@ -1236,12 +1236,6 @@ color: white;
   justify-content: center;
 }
 
-@media (max-width: 904px) {
-  .nyhetsbrev-container-activity {
-    justify-content: left;
-  }
-}
-
 .nyhetsbrev-container-activity a {
   text-decoration: none;
 }
