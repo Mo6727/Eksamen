@@ -1031,7 +1031,8 @@ margin-bottom: 8px;
 
 .activity-body .view-nav-link:hover, 
 .activity-body .nav-link:hover,
-.activity-body .dropdown-click-content a:hover {
+.activity-body .dropdown-click-content a:hover,
+.activity-body .dropbtn-click:hover {
   color: rgb(0, 200, 200);
 }
 
