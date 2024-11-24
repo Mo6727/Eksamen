@@ -11,6 +11,7 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
+/*Nav-bar brukt på alle html sider, med noe endringer*/
 /*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
 .nav-container {
   display: flex;
@@ -39,11 +40,12 @@ main {
   padding-left: 2em;
   padding-right: 1.5em;
   margin-bottom: 1.5em;
-  margin-top: 0.4em;
+  margin-top: 0.5em;
 }
 
 .less-than-logo {
   height: 1.5em;
+  width: 1.5em;
   padding-top: 0.25em;
   padding-left: 2.5em;
 }
@@ -57,7 +59,7 @@ main {
 
 .view-nav-link, .nav-link {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.3em;
   margin-right: 1.5em;
 }
@@ -67,26 +69,24 @@ main {
   cursor: pointer;
 }
 
-/*linker i navbar forsvinner ved scaling(breakpoint)*/
+/*linker i navbar forsvinner ved scaling(breakpoint), derfor la inn linkene i menybaren*/
 @media (max-width: 1200px) {
   .nav-link {
     display: none;
   }
 }
-/*narrow screen - navbar*/
+/*narrow screen - tilpasset navbar*/
 @media (max-width: 650px) {
   .nav-logo, .view-nav-link {
     height: 1.7em;
     padding: 0;
     margin-bottom: -0.1em;
   }
-}
-
-@media (max-width: 650px) {
-.nav-container {
+  .nav-container {
     border-radius: 0 0 1em 1em;
   }
 }
+
 
 /*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
@@ -212,7 +212,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .top-section-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;/*4 bokser over, og resten nede. Intensjonen er at den skal autoskalere*/
   text-align: center;
   color:rgb(43, 43, 43);
   font-size: 2.5em;
@@ -220,7 +220,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   padding-right: 4rem;
   margin-bottom: 2em;
 }
-
+/*for styling og tilpasning, men kan bli litt kronglete ved endringer i koden*/
 .grid-item5 {
   padding-left: 4em;
 }
@@ -246,7 +246,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin-top: -1em;
 }
 
-/*grid->flex*/
+/*grid->flex ved breakpoint*/
 @media (max-width: 900px) {
   .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
   display: flex;
@@ -595,20 +595,20 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .flex-container a{
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   transition: all 0.1s ease;
 }
 
 .flex-container ul li a:hover {
   text-decoration: underline;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 
 /*Artikkel studenhistorier*/
 .article-studentstories {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
   margin: 50px auto;
@@ -624,21 +624,15 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   align-items: stretch; /*Løser gap mellom bilde og tekstboksen etter sentrering av "article-studentstories" */
   width: 100%;
   max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
-  background-color: #ffd500;
+  background-color: rgb(255, 213, 0);
   margin-bottom: 15px;
   border-radius: 8px;
   min-height: 300px;
   box-sizing: border-box;
   line-height: 1.5; /* Konsistent linjeavstand */
   font-size: 16px; /* Juster fonten basert på skjermstørrelse */
-  margin: 0;
   padding: 15px;
   box-sizing: border-box;
-}
-
-.section-text, .img-smiley-box {
-  margin: 0; /* Nullstill margin */
-  padding: 0; /* Nullstill padding */
 }
 
 /* Text*/
@@ -777,52 +771,6 @@ text-decoration: none;
   }
 }
 
-/* Middels skjermer (768px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .article-studentstories {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-row {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    width: 90%; /* Gjør seksjonen litt bredere */
-  }
-
-  .section-text, .img-smiley-box {
-    width: 45%; /* Halv bredde for tekst og bilde */
-  }
-
-  .button-more-studentstories {
-    max-width: 250px; 
-    font-size: 14px;
-  }
-}
-
-/* Store skjermer (1024px og oppover) */
-@media (min-width: 1025px) {
-  .article-studentstories {
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px; /* Begrens bredden for større skjermer */
-  }
-
-  .content-row {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px;
-  }
-
-  .section-text, .img-smiley-box {
-    width: 50%; /* Lik fordeling mellom tekst og bilde */
-  }
-
-  .button-more-studentstories {
-    max-width: 200px;
-  }
-}
 
 /*scrollmenu*/
 .section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
@@ -840,12 +788,13 @@ text-decoration: none;
   color: black;
   text-align: center;
   padding: 14px;
-  background-color: #ffd500;
+  background-color: rgb(255, 213, 0);
   margin: 2px;
   width: 300px; 
   vertical-align: top;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  margin: 10px 5px;
 }
 
 .section-scrollmenu-related-programs a:hover {
@@ -871,7 +820,7 @@ margin-bottom: 8px;
 
 /*footer start*/
 .bottom-footer {
-  background-color: #ffd500;
+  background-color: rgb(255, 213, 0);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -933,7 +882,7 @@ margin-bottom: 8px;
 
 /*nyhetsbrev-button class*/
 .nyhetsbrev-button {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   color: white;
   margin: 1.5em;
   margin-bottom: 0;
@@ -1010,7 +959,7 @@ margin-bottom: 8px;
 
 /*-----ACTIVITY PAGE-----*/
 .activity-body {
-  background-color: rgb(0, 148, 148);
+  background-color: rgb(0, 147, 148);
 }
 
 /*HEADER BRUKT SAMME SOM INDEX.html*/
@@ -1067,7 +1016,7 @@ margin-bottom: 8px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   border-style: dotted;
-  border-color: #ffffff;
+  border-color: rgb(255, 255, 255);
   border-radius: 2em;
   background-color: rgba(0, 200, 200, 0.565);
 }
@@ -1109,7 +1058,6 @@ margin-bottom: 8px;
   }
 }
 
-
 /*table filmanmeldelser*/
 
 .table {
@@ -1119,7 +1067,7 @@ margin-bottom: 8px;
 .table-filmanmeldelser {
   margin: auto;
   border-collapse: collapse; 
-  border: 1px solid #ddd;
+  border: 1px solid rgb(221, 221, 221);
   width: 100%; 
   max-width: 1200px;
   font-size: 1.5em; 
@@ -1137,28 +1085,28 @@ text-align: left;
 
 /* Row and Cell Styling */
 .table-filmanmeldelser tbody tr:nth-child(odd) { 
-   background-color: #20c6e065; 
+   background-color: rgba(32, 198, 224, 0.396); 
   } 
 .table-filmanmeldelser tr:nth-child(even) { 
-   background-color: #206b76;}
+   background-color: rgb(32, 107, 118);}
 
 
 .table-filmanmeldelser th,
 .table-filmanmeldelser td {
-border: 1px solid #ddd;
+border: 1px solid rgb(221, 221, 221);
 padding: 0.5em;
 text-align: left;
 }
 
 /* Header Styling */
 .table-filmanmeldelser th {
-background-color: #9c87f1cc;
+background-color: rgba(156, 135, 241, 0.8);
 font-weight: bold;
 vertical-align: bottom;
 }
 
 thead th {
-  background-color: #fff; /* Explicit background for header to align with border-radius */
+  background-color: rgb(255, 255, 255); /* Explicit background for header to align with border-radius */
   border-top-left-radius: 12px; /* Top left corner */
   border-top-right-radius: 12px; /* Top right corner */
   border: none}
@@ -1213,7 +1161,7 @@ color: black;
 
 /*Brukt samme footer som i index page*/
 .footer-activity-page {
-  background-color: #006270;
+  background-color: rgb(0, 98, 112);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1278,7 +1226,7 @@ color: black;
 
 /*nyhetsbrev-button-activity class*/
 .nyhetsbrev-button-activity {
-  background-color: #8f2020;
+  background-color: rgb(143, 32, 32);
   color: white;
   margin: 20px;
   margin-bottom: 20px;
