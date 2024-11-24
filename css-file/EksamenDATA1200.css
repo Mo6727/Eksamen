@@ -1038,7 +1038,10 @@ margin-bottom: 8px;
   box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226)
 }
 
-.activity-body .view-nav-link, .nav-link, .right-nav, .dropdown-click-content a {
+.activity-body .view-nav-link, 
+.activity-body .nav-link, 
+.activity-body .right-nav, 
+.activity-body .dropdown-click-content a {
   color: rgb(255, 255, 255);
 }
 
