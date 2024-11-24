@@ -1022,14 +1022,19 @@ margin-bottom: 8px;
   box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226)
 }
 
-.activity-body .view-nav-link, .nav-link, .right-nav, .dropdown-click-content a {
+.activity-body .view-nav-link, 
+.activity-body .nav-link,
+.activity-body .right-nav,
+.activity-body .dropdown-click-content a {
   color: rgb(255, 255, 255);
 }
 
-.activity-body .view-nav-link:hover, .nav-link:hover, .right-nav:hover .dropdown-click-content a:hover {
+.activity-body .view-nav-link:hover, 
+.activity-body .nav-link:hover,
+.activity-body .right-nav:hover,
+.activity-body .dropdown-click-content a:hover {
   color: rgb(0, 200, 200);
 }
-
 
 .activity-body .nav-logo {
   height: 4em;
