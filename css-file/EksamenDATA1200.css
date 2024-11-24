@@ -1096,8 +1096,7 @@ margin-bottom: 8px;
   max-width: 1200px;
   font-size: 1.5em; 
   overflow: hidden;
-  border-radius: 10px;
-  border-collapse: separate;
+  border-radius: 1em;
   border-spacing: 0;
 }
 
@@ -1108,6 +1107,7 @@ margin-bottom: 0.5em;
 text-align: left;
 }
 
+/* Row and Cell Styling */
 .table-filmanmeldelser tbody tr:nth-child(odd) { 
    background-color: #20c6e065; 
   } 
@@ -1122,6 +1122,7 @@ padding: 0.5em;
 text-align: left;
 }
 
+/* Header Styling */
 .table-filmanmeldelser th {
 background-color: #9c87f1cc;
 font-weight: bold;
@@ -1249,7 +1250,7 @@ color: black;
 
 /*nyhetsbrev-button-activity class*/
 .nyhetsbrev-button-activity {
-  background-color: #952323;
+  background-color: #8f2020;
   color: white;
   margin: 20px;
   margin-bottom: 20px;
