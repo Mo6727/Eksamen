@@ -1374,7 +1374,7 @@ color: white;
   margin: 0;
 }
 
-main article img {
+.github-body main article img {
   height: 100%;
   width: 100%;
   max-width: 100%;
