@@ -593,7 +593,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /*Artikkel studenhistorier*/
 .article-studentstories {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
   margin: 50px auto;
@@ -616,14 +616,8 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-sizing: border-box;
   line-height: 1.5; /* Konsistent linjeavstand */
   font-size: 16px; /* Juster fonten basert på skjermstørrelse */
-  margin: 0;
   padding: 15px;
   box-sizing: border-box;
-}
-
-.section-text, .img-smiley-box {
-  margin: 0; /* Nullstill margin */
-  padding: 0; /* Nullstill padding */
 }
 
 /* Text*/
@@ -762,52 +756,6 @@ text-decoration: none;
   }
 }
 
-/* Middels skjermer (768px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .article-studentstories {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-row {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    width: 90%; /* Gjør seksjonen litt bredere */
-  }
-
-  .section-text, .img-smiley-box {
-    width: 45%; /* Halv bredde for tekst og bilde */
-  }
-
-  .button-more-studentstories {
-    max-width: 250px; 
-    font-size: 14px;
-  }
-}
-
-/* Store skjermer (1024px og oppover) */
-@media (min-width: 1025px) {
-  .article-studentstories {
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px; /* Begrens bredden for større skjermer */
-  }
-
-  .content-row {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px;
-  }
-
-  .section-text, .img-smiley-box {
-    width: 50%; /* Lik fordeling mellom tekst og bilde */
-  }
-
-  .button-more-studentstories {
-    max-width: 200px;
-  }
-}
 
 /*scrollmenu*/
 .section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
@@ -831,6 +779,7 @@ text-decoration: none;
   vertical-align: top;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  margin: 10px 5px;
 }
 
 .section-scrollmenu-related-programs a:hover {
