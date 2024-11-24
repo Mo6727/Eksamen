@@ -81,14 +81,18 @@ main {
     height: 1.7em;
     padding: 0;
     margin-bottom: -0.1em;
+    font-size: 1em;
   }
   .nav-container {
     border-radius: 0 0 1em 1em;
   }
+  .dropbtn-click {
+    font-size: 1em !important; /*prioriterer*/
+  }
 }
 
 
-/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
+/*-----CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /* Dropdown Container */
 .dropdown-click {
