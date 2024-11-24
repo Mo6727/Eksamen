@@ -264,7 +264,16 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 /*Alle de store informasjonsboksene*/
 .big-infobox {
-  margin: 2em 17em; /*Margin for at details boksene skal være venstrestilte*/
+  margin: 2em auto;
+  max-width: 60%;
+}
+
+@media (max-width: 800px) {
+.big-infobox {
+  max-width: 90%;
+}
+
+
 }
 
 .dropdown-infobox {
@@ -476,38 +485,11 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   border-radius: 0;
 }
 
-.subject-select::-webkit-details-marker {
-  display: none;
-}
-
-.subject-select {
+.dropdown-button .subject-select {
   margin: 0em 5em;
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  background-color: rgb(255, 213, 0);
   border: 1px solid rgb(255, 213, 0);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
 }
-
-.subject-group .subject-select::before {
-  content: "";
-  background-image: url(../pictures/plus-icon.svg); /*Eget ikon laget med Figma*/
-  background-size: contain;
-  width: 2.2em;
-  height: 2.2em;
-  position: absolute;
-  background-repeat: no-repeat;
-  left: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-.subject-group[open] .subject-select::before {
-  background-image: url(../pictures/minus-icon.svg); /*Eget ikon laget med Figma*/
-}
-
 
 /*Mer informasjon*/
 .small-infobox {
@@ -1108,22 +1090,12 @@ vertical-align: bottom;
 
 thead th {
   background-color: rgb(255, 255, 255); /* Explicit background for header to align with border-radius */
-  border-top-left-radius: 12px; /* Top left corner */
-  border-top-right-radius: 12px; /* Top right corner */
   border: none}
-
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 12px; /* Bottom left corner */
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 12px; /* Bottom right corner */
-}
 
 /* Link */
 .table-filmanmeldelser a {
 color: black; 
-text-decoration: none;
+text-decoration: underline;
 }
 
 td a:hover {
