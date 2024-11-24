@@ -314,21 +314,20 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.6em;
   padding: 0em;
 }
+}
 
 .infobox-content {
   margin: 1em;
+}
+
+.infobox-content li {
+  padding: -0.5em;
 }
 
 .infobox-content .year-button {
   margin: 0.4em;
   padding: 0.7em;
   font-size: 0.8em;
-}
-
-.study-section {
-
-}
-
 }
 
 .dropdown-infobox {
@@ -382,7 +381,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .infobox-content li {
   font-weight: 550;
   color: #333;
-  padding: 0.5em;
+  padding: 0.2em;
   margin-left: -3em;
   list-style-type: none;
   flex: 2;
@@ -417,9 +416,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   background-color: rgb(255, 213, 0);
 }
 
-.learning-table li {
-  font-weight: 500;
-}
+
 
 
 /*Studiets oppbygging - Ny versjon*/
@@ -577,7 +574,6 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /*Mer informasjon*/
 .small-infobox {
   text-align: center;
-  margin: 3rem 12rem;
 }
 
 .small-infobox li {
@@ -587,8 +583,9 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .additional-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding: 1em;
 }
 
 .infobox-card {
@@ -596,10 +593,10 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
     flex-direction: column;
     background-color: rgb(250, 250, 250);
     border-radius: 20px;
-    margin: 0.5em;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     min-height: 10rem;
     font-weight: 500;
+    width: 100%;
 }
 
 .infobox-card a {
@@ -859,7 +856,7 @@ margin-bottom: 8px;
 
 @media (max-width: 1200px) {
   .section-scrollmenu-related-programs a {
-    width: 250px; /
+    width: 250px; 
     padding: 12px;
     font-size: 0.9em;
   }
