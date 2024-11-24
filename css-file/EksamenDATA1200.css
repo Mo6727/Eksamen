@@ -1068,7 +1068,6 @@ margin-bottom: 8px;
 
 .table-filmanmeldelser {
   margin: auto;
-  table-layout: fixed;
   border-collapse: collapse; 
   border: 1px solid rgb(221, 221, 221);
   width: 100%; 
@@ -1114,11 +1113,11 @@ thead th {
 /* Link */
 .table-filmanmeldelser a {
 color: black; 
-text-decoration: none;
+text-decoration: underline;
 }
 
 td a:hover {
-text-decoration: none;
+text-decoration: underline;
 color: white;
 }    
 
@@ -1257,4 +1256,17 @@ color: white;
   align-items: center;
   padding: 15px;
   border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+/*-----ACCESSIBILITY PAGE-----*/
+.activity-accessibility-img {
+  height: 30em;
+  width: 60em;
+
 }
