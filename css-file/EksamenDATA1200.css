@@ -81,6 +81,10 @@ main {
     padding: 0;
     margin-bottom: -0.1em;
     font-size: 1em;
+    margin-left: -0.5em;
+  }
+  .less-than-logo {
+    margin-left: -2em;
   }
   .nav-container {
     border-radius: 0 0 1em 1em;
@@ -1233,16 +1237,15 @@ color: white;
 
 
 /*Brukt samme footer som i index page*/
-.footer-activity-page {
+.activity-body .bottom-footer {
   background-color: rgb(0, 98, 112);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
   margin-top: 2em;
   text-align: center;
   font-family: Alumni Sans Pinstripe, sans-serif;
+  font-weight: bold;
 }
+
+
 
 .footer-activity-page ul {
   list-style: none;
