@@ -247,7 +247,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*grid->flex ved breakpoint*/
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
   display: flex;
   flex-direction: column;
