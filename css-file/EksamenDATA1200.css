@@ -1372,6 +1372,9 @@ color: white;
 /*-----GITHUB PAGE-----*/
 .github-body {
   margin: 0;
+}
+
+.github-body main {
   text-align: center;
 }
 
@@ -1384,16 +1387,6 @@ color: white;
   height: 100%;
   width: 100%;
   max-width: 100%;
-}
-
-.github-body main a {
-  text-decoration: none;
-  color: black;
-}
-
-.github-body main a:hover{
-  text-decoration: underline;
-  color: purple;
 }
 
 .github-body ul {
