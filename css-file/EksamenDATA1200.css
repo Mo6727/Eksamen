@@ -1099,7 +1099,7 @@ text-decoration: underline;
 }
 
 td a:hover {
-text-decoration: none;
+text-decoration: underline;
 color: white;
 }    
 
