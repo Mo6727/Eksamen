@@ -90,6 +90,7 @@ main {
   }
 }
 
+
 /*-----CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /* Dropdown Container */
@@ -148,6 +149,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   color: white;
 }
 
+
 /* Show content when checkbox is checked */
 .dropdown-checkbox:checked ~ .dropdown-click-content {
   display: block;
@@ -158,10 +160,12 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
           position: relative;
           display: inline-block;
       }
+
       Hidden Checkbox
       .dropdown-checkbox {
           display: none;
       }
+
       Label as the Dropdown Button
       .dropbtn {
           background-color: #007bff; Blue background
@@ -173,6 +177,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
           text-decoration: none;
           display: inline-block;
       }
+
       Dropdown Content (Hidden by Default)
       .dropdown-content {
           display: none;
@@ -185,15 +190,18 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
           padding: 0;
           margin: 0;
       }
+
       .dropdown-content a {
           color: black;
           padding: 10px 15px;
           text-decoration: none;
           display: block;
       }
+
       .dropdown-content a:hover {
           background-color: #f1f1f1;
       }
+
       Show content when checkbox is checked
       .dropdown-checkbox:checked ~ .dropdown-content {
           display: block;
@@ -820,10 +828,10 @@ margin-bottom: 8px;
     font-size: 0.7em;
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 7px; 
+    font-size: 12px; 
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 5px; 
+    font-size: 13px; 
   }
 }
 
@@ -834,10 +842,10 @@ margin-bottom: 8px;
     font-size: 0.8em;
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 8px;
+    font-size: 13px;
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 9px; 
+    font-size: 14px; 
   }
 }
 
@@ -848,10 +856,10 @@ margin-bottom: 8px;
     font-size: 0.9em;
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 9px; 
+    font-size: 14px; 
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
