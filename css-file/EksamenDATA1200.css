@@ -269,7 +269,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Skalerer først sammen med top-section*/
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 .big-infobox {
   max-width: 70%;
 }
@@ -281,13 +281,13 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Skalerer til små skjermer*/
-@media (max-width: 650px) {
+@media (max-width: 480px) {
 .big-infobox {
   max-width: 90%;
 }
 
 .learning-table {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 
@@ -367,12 +367,12 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   border-spacing: 0;
   margin: 0 auto;
   background-color: rgb(244, 244, 244);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
 }
 
 .learning-table th, td {
   padding: 0.5em;
-  border: 2px solid rgb(97, 97, 97);
+  border: 2px solid rgb(164, 164, 164);
   vertical-align: top;
 }
 
