@@ -1125,7 +1125,7 @@ text-decoration: none;
 }
 
 td a:hover {
-text-decoration: underline;
+text-decoration: none;
 color: white;
 }    
 
