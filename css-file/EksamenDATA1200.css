@@ -288,6 +288,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .learning-table {
   font-size: 0.6em;
+  padding: 0em;
 }
 
 
@@ -367,12 +368,11 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   border-spacing: 0;
   margin: 0 auto;
   background-color: rgb(244, 244, 244);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
 }
 
 .learning-table th, td {
   padding: 0.5em;
-  border: 2px solid rgb(164, 164, 164);
+  border: 1px solid rgb(140, 140, 140);
   vertical-align: top;
 }
 
