@@ -278,7 +278,13 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.9em;
 }
 
+.study-section {
+  display: flex;
+  flex-direction: column;
 }
+
+}
+
 
 /*Skalerer til små skjermer*/
 @media (max-width: 480px) {
@@ -290,6 +296,17 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.6em;
   padding: 0em;
 }
+
+.infobox-content {
+  margin: 1em;
+}
+
+.infobox-content .year-button {
+  margin: 0.2em;
+  padding: 0.7em;
+  font-size: 0.8em;
+}
+
 
 
 }
@@ -387,9 +404,9 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 /*Studiets oppbygging - Ny versjon*/
 .year-button {
-  padding: 0.8rem 2rem;
-  justify-self: center;
-  margin: 1rem;
+  display: inline-block;
+  padding: 0.8em 2em;
+  margin: 1em;
   font-weight: bold;
   font-size: 1.2em;
   cursor: pointer;
@@ -420,7 +437,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .study-section {    
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   max-width: 900px;
   margin: 0em 5em;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
@@ -503,10 +520,11 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   border-radius: 0;
 }
 
-.dropdown-button .subject-select {
+.subject-group .dropdown-button {
   margin: 0em 5em;
-  border: 1px solid rgb(255, 213, 0);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  border-radius: 0 !important; /*Overriding .dropdown-info istedenfor å lage en ny klasse og legge til den samme koden fra tidligere*/
 }
 
 /*Mer informasjon*/
