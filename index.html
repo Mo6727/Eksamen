@@ -20,9 +20,10 @@
             <li><a href="github.html" class="nav-link">GitHub</a></li>
             <li><a href="hobby.html" class="nav-link">Activity</a></li>
             <li><a href="https://www.oslomet.no/en" class="view-nav-link">EN</a></li>
-            <li class="dropdown">
-                <a class="dropbtn">MENY<i class="fa-caret-down"></i></a>
-            <ul class="dropdown-content">
+            <li class="dropdown-click">
+              <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+              <label for="dropdown-toggle" class="dropbtn-click">MENY</label>
+              <ul class="dropdown-click-content">
                 <li><a href="https://www.oslomet.no/studier">Studier</a></li>
                 <li><a href="https://www.oslomet.no/forskning">Forskningen vår</a></li>
                 <li><a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a></li>
@@ -33,15 +34,29 @@
                 <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="hobby.html">Activity</a></li>
-            </ul>
+              </ul>
             </li>
         </ul>
     </nav>
 </header>
 <!--Brukt kilde til å lage nav-bar.
 kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-Brukt w3school for å lage hover->dropdownmeny
-Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
+Brukt chatgpt for å lage dropdownmeny med click:
+Kilde chatgpt:
+  Dropdown Structure
+<div class="dropdown">
+  Hidden Checkbox
+<input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+  Label acts as the toggle button
+<label for="dropdown-toggle" class="dropbtn">Click Me</label>
+  Dropdown Content
+<ul class="dropdown-content">
+            <li><a href="#option1">Option 1</a></li>
+            <li><a href="#option2">Option 2</a></li>
+            <li><a href="#option3">Option 3</a></li>
+        </ul>
+    </div>
+-->
 
     <main>
         <section class="top-section">
@@ -116,7 +131,6 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
           <th>Vitenskapelige beregninger</th>
           <th>Matematikk og fysikk</th>
         </tr>
-        <!--Row 1 of learning-table-->
         <tr>
         <td>
           <ul>
@@ -125,14 +139,12 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
             <li>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</li>
             </ul>
            </td>
-        <!--Row 2 of learning-table-->
         <td>
           <ul>
           <li>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.</li>
           <li>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</li>
           </ul>
             </td>
-        <!--Row 3 of learning-table-->
         <td>
           <ul>
             <li>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.</li>
@@ -145,213 +157,629 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
   </details>
 </section>
 
-    <!--M - Studiets oppbygging-->
+    <!--Hvordan foregår undervisningen?-->
+    <section class="big-infobox">
+      <details class="dropdown-infobox">
+        <summary class="dropdown-button"><h2>Hvordan foregår undervisningen?</h2></summary>
+          <article class="infobox-content">
+            <h3>Undervisningen er en kombinasjon av:</h3>
+            <ul>
+            <li>Prosjektarbeid</li>
+            <li>Workshop</li>
+            <li>Presentasjoner</li>
+            <li>Veiledninger</li>
+            <li>Diskusjoner og refleksjoner</li>
+            <li>Forelesninger</li>
+            <li>Selvstudier</li>
+            <li>Gruppearbeid</li>
+            <li>Arbeidslivsrelevant bacheloroppgave</li>
+          </ul>
+          <aside class="infobox-aside-info">
+            <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.  </p>
+          </aside>
+        </article>
+      </details>
+    
+    </section>
+
+
+    <!--Studiets oppbygging-->
     <section class="big-infobox"> 
       <details class="dropdown-infobox">
         <summary class="dropdown-button"><h2>Studiets oppbygging</h2></summary>
         <article class="infobox-content">
-    <button class="study-button" onclick="location.href='#year1'" aria-controls="year1">1. studieår</button>
-    <button class="study-button" onclick="location.href='#year2'" aria-controls="year2">2. studieår</button>
-    <button class="study-button" onclick="location.href='#year3'" aria-controls="year3">3. studieår</button>
-    
-    
-    <section id="year1" class="year-content">
-      <h3>1. studieår</h3>
-    <section class="study-section">
-      <section class="study-box">
-        <article class="semester">
-          <h2>Semester 1</h2>
-          <article class="subject-card">
-            <h3>Diskret matematikk</h3>
-            <footer class="card-footer">
-              <p>DAPE1300</p> <!--Fjernet span, er nå p-->
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Programmering</h3>
-            <footer class="card-footer">
-              <p>DAPE1400</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Teknologi og samfunn for programmerere</h3>
-            <footer class="card-footer">
-              <p>DATA1100</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-              <h3>Innføring i modeller og beregninger</h3>
-              <footer class="card-footer">
-                <p>MAMO1100</p>
-                <p>10 pts.</p>
-              </footer>
+
+          <a class="year-button" href="#year1">1. studieår</a>
+          <a class="year-button" href="#year2">2. studieår</a>
+          <a class="year-button" href="#year3">3. studieår</a>
+  
+          
+          
+          <section id="year1" class="year-content">
+          <h3>1. studieår</h3>
+          <section class="study-section">
+            <article class="semester">
+              <h2>Semester 1</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
             </article>
-        </article>
-    
-        <article class="semester">
-          <h2>Semester 2</h2>
-          <article class="subject-card">
-            <h3>Matematikk 1000</h3>
-            <footer class="card-footer">
-              <p>DAFE1000</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Fysikk og kjemi</h3>
-            <footer class="card-footer">
-              <p>DAPE2101</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Databaser</h3>
-            <footer class="card-footer">
-              <p>DATA1500</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-        </article>
-      </section>
-    </section>
-    </section>
-    
-    <section id="year2" class="year-content">
-      <h3>2. studieår</h3>
-    <section class="study-section">
-      <section class="study-box">
-        <article class="semester">
-          <h2>Semester 3</h2>
-          <article class="subject-card">
-            <h3>Diskret matematikk</h3>
-            <footer class="card-footer">
-              <p>DAPE1300</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Programmering</h3>
-            <footer class="card-footer">
-              <p>DAPE1400</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Teknologi og samfunn for programmerere</h3>
-            <footer class="card-footer">
-              <p>DATA1100</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-              <h3>Innføring i modeller og beregninger</h3>
-              <footer class="card-footer">
-                <p>MAMO1100</p>
-                <p>10 pts.</p>
-              </footer>
+        
+            <article class="semester">
+              <h2>Semester 2</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
             </article>
-        </article>
-    
-        <article class="semester">
-          <h2>Semester 4</h2>
-          <article class="subject-card">
-            <h3>Matematikk 1000</h3>
-            <footer class="card-footer">
-              <p>DAFE1000</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Fysikk og kjemi</h3>
-            <footer class="card-footer">
-              <p>DAPE2101</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Databaser</h3>
-            <footer class="card-footer">
-              <p>DATA1500</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-        </article>
-      </section>
-    </section>
-    </section>
-    
-    <section id="year3" class="year-content">
-      <h3>3. studieår</h3>
-    <section class="study-section">
-      <section class="study-box">
-        <article class="semester">
-          <h2>Semester 5</h2>
-          <article class="subject-card">
-            <h3>Diskret matematikk</h3>
-            <footer class="card-footer">
-              <p>DAPE1300</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Programmering</h3>
-            <footer class="card-footer">
-              <p>DAPE1400</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Teknologi og samfunn for programmerere</h3>
-            <footer class="card-footer">
-              <p>DATA1100</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-              <h3>Innføring i modeller og beregninger</h3>
-              <footer class="card-footer">
-                <p>MAMO1100</p>
-                <p>10 pts.</p>
-              </footer>
+          </section>
+        </section>
+      
+        
+        <section id="year2" class="year-content">
+          <h3>2. studieår</h3>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
             </article>
-        </article>
-    
-        <article class="semester">
-          <h2>Semester 6</h2>
-          <article class="subject-card">
-            <h3>Matematikk 1000</h3>
-            <footer class="card-footer">
-              <p>DAFE1000</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Fysikk og kjemi</h3>
-            <footer class="card-footer">
-              <p>DAPE2101</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-          <article class="subject-card">
-            <h3>Databaser</h3>
-            <footer class="card-footer">
-              <p>DATA1500</p>
-              <p>10 pts.</p>
-            </footer>
-          </article>
-        </article>
-      </section>
-    </section>
-    </section>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+        
+        <!--Emnegrupper - Andre studieår-->
+        <section class="subject-group-section">
+               
+          <!--Emnegruppe 1-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Matematikk og fysikk</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+        
+               
+          <!--Emnegruppe 2-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Statistiske og datadrevne metoder</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+
+          <!--Emnegruppe 3-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Vitenskapelige beregninger</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+        
+        </section>
+        </section>
+        
+        
+        <section id="year3" class="year-content">
+          <h3>3. studieår</h3>
+          <section class="study-section">
+            <article class="semester">
+              <h2>Semester 5</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 6</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+          
+        </section>
+
+        <!--Emnegrupper - Tredje studieår-->
+        <section class="subject-group-section">
+               
+          <!--Emnegruppe 1-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Matematikk og fysikk</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+        
+               
+          <!--Emnegruppe 2-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Statistiske og datadrevne metoder</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+
+          <!--Emnegruppe 3-->
+          <details class="subject-group" name="display-subject-group">
+            <summary class="subject-select"><h3>Emnegruppe: Vitenskapelige beregninger</h3></summary>
+            <section class="study-section">
+              <article class="semester">
+              <h2>Semester 3</h2>
+              <article class="subject-card">
+                <h3>Diskret matematikk</h3>
+                <footer class="card-footer">
+                  <p>DAPE1300</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Programmering</h3>
+                <footer class="card-footer">
+                  <p>DAPE1400</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Teknologi og samfunn for programmerere</h3>
+                <footer class="card-footer">
+                  <p>DATA1100</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                  <h3>Innføring i modeller og beregninger</h3>
+                  <footer class="card-footer">
+                    <p>MAMO1100</p>
+                    <p>10 pts.</p>
+                  </footer>
+                </article>
+            </article>
+        
+            <article class="semester">
+              <h2>Semester 4</h2>
+              <article class="subject-card">
+                <h3>Matematikk 1000</h3>
+                <footer class="card-footer">
+                  <p>DAFE1000</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Fysikk og kjemi</h3>
+                <footer class="card-footer">
+                  <p>DAPE2101</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <h3>Databaser</h3>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+            </article>
+        </section>
+          </details>
+        
+        </section>
+
+        </section>
     </article>
     </details>
     </section>
 
-    <!--Nytt forslag til "Studiets oppbygging" med details-->
 
+          
 
 
     <!--Flere informasjonsbokser-->
@@ -367,7 +795,7 @@ Kilde:https://www.w3schools.com/howto/howto_css_mega_menu.asp-->
               <li>15. april: ordinær søknadsfrist</li>
               <li>1. mars: frist for enkelte søkere</li>
             </ul>
-            <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å søke på bachelor</a> <!--Legg til lenke-->
+            <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å søke på bachelor</a>
       </article>
 
       <article class="infobox-card">
