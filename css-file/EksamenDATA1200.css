@@ -1059,7 +1059,7 @@ margin-bottom: 8px;
   opacity: 0.8;
 }
 
-/*grid->flex*/
+/*grid->flex (breakingpoints)*/
 @media (max-width: 1700px) {
   .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
