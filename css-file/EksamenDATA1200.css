@@ -426,17 +426,25 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   min-height: 8em;
   transition: transform 0.7s;
+  text-decoration: none;
 }
 
 .subject-card:hover {
   transform: scale(1.07); /*Transform https://www.w3schools.com/cssref/css3_pr_transform.php*/
-  cursor: pointer;
 }
 
-.subject-card h3 {
-  color: rgb(85, 85, 85);
-  font-size: 1em;
-  padding-top: 0.5em;
+.subject-card a {
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 1.3em;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 213, 0);
+  text-decoration-thickness: 2px;
+}
+
+.subject-card a:hover {
+  opacity: 0.6;
 }
 
 .card-footer {
