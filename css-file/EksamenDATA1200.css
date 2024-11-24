@@ -1383,6 +1383,10 @@ color: white;
   padding: 1.5em;
 }
 
+.github-body main article h1 {
+  font-size: xx-large;
+}
+
 .github-body main article img {
   height: 100%;
   width: 100%;
