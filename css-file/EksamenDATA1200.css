@@ -1393,6 +1393,8 @@ color: white;
   max-width: 100%;
 }
 
-.github-body ul {
+.fordeler_github ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
