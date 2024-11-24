@@ -310,7 +310,9 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.8em;
 }
 
+.study-section {
 
+}
 
 }
 
@@ -430,7 +432,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .year-content > h3:first-child {
   font-size: 1.4em;
-  padding-top: 1em;
+  margin-top: -0.3em;
 }
 
 #year1:target, #year2:target, #year3:target {   /*Target https://www.w3schools.com/cssref/sel_target.php*/
@@ -440,9 +442,9 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .study-section {    
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   max-width: 900px;
-  margin: 0em 5em;
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -523,11 +525,38 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   border-radius: 0;
 }
 
-.subject-group .dropdown-button {
-  margin: 0em 5em;
+.dropdown-subject-button::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-subject-button { 
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
-  border-radius: 0 !important; /*Overriding .dropdown-info istedenfor å lage en ny klasse og legge til den samme koden fra tidligere*/
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  background-color: rgb(255, 213, 0);
+}
+
+.dropdown-subject-group[open] .dropdown-subject-button {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-subject-group .dropdown-subject-button::before {
+  content: "";
+  background-image: url(../pictures/plus-icon.svg); /*Eget ikon laget med Figma*/
+  background-size: contain;
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-subject-group[open] .dropdown-subject-button::before {
+  background-image: url(../pictures/minus-icon.svg); /*Eget ikon laget med Figma*/
 }
 
 /*Mer informasjon*/
@@ -1355,4 +1384,10 @@ color: white;
 /*-----GITHUB PAGE-----*/
 .github-body {
   margin: 0;
+}
+
+main article img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
 }
