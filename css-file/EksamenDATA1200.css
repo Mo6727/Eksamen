@@ -1356,3 +1356,9 @@ color: white;
 .github-body {
   margin: 0;
 }
+
+main article img {
+  height: 80%;
+  width: 80%;
+  max-width: 100%;
+}
