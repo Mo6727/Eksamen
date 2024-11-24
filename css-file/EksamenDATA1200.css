@@ -1371,3 +1371,8 @@ color: white;
   color: black;
 }
 
+.github-body main a:hover{
+  color: purple;
+}
+
+
