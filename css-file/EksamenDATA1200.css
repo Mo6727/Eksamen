@@ -1375,6 +1375,7 @@ color: white;
 }
 
 .github-body main a:hover{
+  text-decoration: underline;
   color: purple;
 }
 
