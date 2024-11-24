@@ -35,9 +35,11 @@ main {
 }
 
 .oslomet-logo {
-  height: 5em;
+  height: 3.3em;
   padding-left: 2em;
   padding-right: 1.5em;
+  margin-bottom: 1.5em;
+  margin-top: 0.4em;
 }
 
 .less-than-logo {
@@ -120,8 +122,8 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   min-width: 160px;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-top: 1.2em;
-  border-radius: 2em;
+  margin-top: -0.01em;
+  border-radius: 0 0 2em 2em;
 }
 
 .dropdown-click-content a {
