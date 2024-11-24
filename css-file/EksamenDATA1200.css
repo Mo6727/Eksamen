@@ -81,14 +81,18 @@ main {
     height: 1.7em;
     padding: 0;
     margin-bottom: -0.1em;
+    font-size: 1em;
   }
   .nav-container {
     border-radius: 0 0 1em 1em;
   }
+  .dropbtn-click {
+    font-size: 1em !important; /*prioriterer over default/andre koder*/
+  }
 }
 
 
-/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
+/*-----CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /* Dropdown Container */
 .dropdown-click {
@@ -726,7 +730,7 @@ background-color: rgb(229, 191, 0);
 }
 
 .button-more-studentstories:active {
-transform: scale(0.98); /* Button "press" effect */
+transform: scale(0.98); 
 }
 
 .link-for-button {
@@ -748,13 +752,13 @@ text-decoration: none;
   }
 
   .content-row {
-    flex-direction: column; /* Stable tekst og bilde */
+    flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
   .section-text, .img-smiley-box {
-    width: 100%; /* Full bredde for små skjermer */
+    width: 100%; 
   }
 
   .section-text {
@@ -767,7 +771,7 @@ text-decoration: none;
 
   .button-more-studentstories {
     width: 100%; 
-    max-width: 300px; /* Begrens maks bredde for knappen */
+    max-width: 300px;
   }
 }
 
@@ -802,7 +806,7 @@ text-decoration: none;
 }
 
 .section-scrollmenu-related-programs .program-item ul {
-list-style-type: none; /* Removes dots */
+list-style-type: none; 
 padding: 0;
  margin: 0;
 }
@@ -1033,16 +1037,6 @@ margin-bottom: 8px;
   opacity: 0.8;
 }
 
-/*narrow screen - navbar activity page*/
-@media (max-width: 650px) {
-  .activity-body .nav-logo {
-    height: 2.5em;
-    padding: 0 0 0.4em;
-    margin-bottom: -1em;
-  }
-}
-
-
 /*grid->flex*/
 @media (max-width: 1700px) {
   .movie-grid, .movie-grid-container {
@@ -1060,10 +1054,33 @@ margin-bottom: 8px;
   }
 }
 
+/*narrow screen*/
+@media (max-width: 520px) {
+  .activity-body .nav-logo {
+    height: 2.5em;
+    padding: 0 0 0.4em;
+    margin-bottom: -1em;
+  }
+  .popcorn-logo {
+    height: 9em;
+  }
+  .movie-img {
+    height: 15em;
+  }
+  .movie-grid-container {
+    font-size: 1.5em;
+  }
+  .filmklubb-bottom-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 /*table filmanmeldelser*/
 
 .table {
   margin-top: 5em;
+  padding: 1em;
 }
 
 .table-filmanmeldelser {
