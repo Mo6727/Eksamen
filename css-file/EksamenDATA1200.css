@@ -1072,7 +1072,6 @@ margin-bottom: 8px;
   max-width: 1200px;
   font-size: 1.5em; 
   overflow: hidden;
-  border-radius: 1em;
   border-spacing: 0;
 }
 
@@ -1126,8 +1125,8 @@ text-decoration: none;
 }
 
 td a:hover {
-text-decoration: none;
-color: black;
+text-decoration: underline;
+color: white;
 }    
 
 @media screen and (max-width: 768px) {
