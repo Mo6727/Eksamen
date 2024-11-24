@@ -1066,6 +1066,7 @@ margin-bottom: 8px;
 
 .table-filmanmeldelser {
   margin: auto;
+  table-layout: fixed;
   border-collapse: collapse; 
   border: 1px solid rgb(221, 221, 221);
   width: 100%; 
@@ -1106,17 +1107,7 @@ vertical-align: bottom;
 
 thead th {
   background-color: rgb(255, 255, 255); /* Explicit background for header to align with border-radius */
-  border-top-left-radius: 12px; /* Top left corner */
-  border-top-right-radius: 12px; /* Top right corner */
   border: none}
-
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 12px; /* Bottom left corner */
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 12px; /* Bottom right corner */
-}
 
 /* Link */
 .table-filmanmeldelser a {
