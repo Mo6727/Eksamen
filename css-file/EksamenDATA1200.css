@@ -87,7 +87,7 @@ main {
     border-radius: 0 0 1em 1em;
   }
   .dropbtn-click {
-    font-size: 1em !important; /*prioriterer*/
+    font-size: 1em !important; /*prioriterer over default/andre koder*/
   }
 }
 
@@ -1037,16 +1037,6 @@ margin-bottom: 8px;
   opacity: 0.8;
 }
 
-/*narrow screen - navbar activity page*/
-@media (max-width: 650px) {
-  .activity-body .nav-logo {
-    height: 2.5em;
-    padding: 0 0 0.4em;
-    margin-bottom: -1em;
-  }
-}
-
-
 /*grid->flex*/
 @media (max-width: 1700px) {
   .movie-grid, .movie-grid-container {
@@ -1061,6 +1051,28 @@ margin-bottom: 8px;
   grid-template-columns: 1fr;
   flex-direction: column;
   padding-bottom: 1em;
+  }
+}
+
+/*narrow screen*/
+@media (max-width: 520px) {
+  .activity-body .nav-logo {
+    height: 2.5em;
+    padding: 0 0 0.4em;
+    margin-bottom: -1em;
+  }
+  .popcorn-logo {
+    height: 9em;
+  }
+  .movie-img {
+    height: 15em;
+  }
+  .movie-grid-container {
+    font-size: 1.5em;
+  }
+  .filmklubb-bottom-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
