@@ -1175,25 +1175,7 @@ color: black;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*footer activity start*/
+/*Brukt samme footer som i index page*/
 .footer-activity-page {
   background-color: #006270;
   display: flex;
