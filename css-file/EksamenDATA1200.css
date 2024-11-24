@@ -81,6 +81,10 @@ main {
     padding: 0;
     margin-bottom: -0.1em;
     font-size: 1em;
+    margin-left: -0.5em;
+  }
+  .less-than-logo {
+    margin-left: -2em;
   }
   .nav-container {
     border-radius: 0 0 1em 1em;
@@ -621,6 +625,18 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin: 0.5em;
 }
 
+/*Artikkel studenhistorier*/
+.article-studentstories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px; /* Maks bredde for å unngå for mye stretching */
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box; 
+  border-radius: 8px;
+}
+
 /*Tekst og bilde*/
 .content-row {
   display: flex;
@@ -1016,12 +1032,12 @@ margin-bottom: 8px;
 .activity-body .nav-container {
   background-color: rgb(0, 98, 112);
   position: absolute;
-  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226);
+  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(52, 52, 52, 0.226)
 }
 
 .activity-body .view-nav-link, 
-.activity-body .nav-link,
-.activity-body .right-nav,
+.activity-body .nav-link, 
+.activity-body .right-nav, 
 .activity-body .dropdown-click-content a {
   color: rgb(255, 255, 255);
 }
@@ -1032,6 +1048,7 @@ margin-bottom: 8px;
 .activity-body .dropbtn-click:hover {
   color: rgb(0, 200, 200);
 }
+
 
 .activity-body .nav-logo {
   height: 4em;
@@ -1091,12 +1108,10 @@ margin-bottom: 8px;
   border-radius: 2.5em;
   margin-bottom: -1em;
   margin-top: -0.5em;
-  transition: transform 0.4s;
 }
 
 .movie-img:hover {
   opacity: 0.8;
-  transform: scale(1.05);
 }
 
 /*grid->flex (breakingpoints)*/
@@ -1142,7 +1157,7 @@ margin-bottom: 8px;
 
 .table {
   margin-top: 5em;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .table-filmanmeldelser {
@@ -1151,7 +1166,7 @@ margin-bottom: 8px;
   border: 1px solid rgb(221, 221, 221);
   width: 100%; 
   max-width: 1200px;
-  font-size: 1.5em; 
+  font-size: 1.4em; 
   overflow: hidden;
   border-spacing: 0;
 }
@@ -1371,6 +1386,7 @@ color: white;
 }
 
 .github-body main a:hover{
+  text-decoration: underline;
   color: purple;
 }
 
