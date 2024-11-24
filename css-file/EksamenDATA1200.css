@@ -281,7 +281,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Skalerer til små skjermer*/
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 .big-infobox {
   max-width: 90%;
 }
