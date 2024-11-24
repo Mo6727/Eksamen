@@ -372,7 +372,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .learning-table th, td {
   padding: 0.5em;
-  border: 2px solid rgb(140, 140, 140);
+  border: 1px solid rgb(140, 140, 140);
   vertical-align: top;
 }
 
