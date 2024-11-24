@@ -81,6 +81,10 @@ main {
     padding: 0;
     margin-bottom: -0.1em;
     font-size: 1em;
+    margin-left: -0.5em;
+  }
+  .less-than-logo {
+    margin-left: -2em;
   }
   .nav-container {
     border-radius: 0 0 1em 1em;
@@ -1084,7 +1088,10 @@ margin-bottom: 8px;
   color: rgb(255, 255, 255);
 }
 
-.activity-body .view-nav-link:hover, .nav-link:hover, .right-nav:hover .dropdown-click-content a:hover {
+.activity-body .view-nav-link:hover, 
+.activity-body .nav-link:hover,
+.activity-body .dropdown-click-content a:hover,
+.activity-body .dropbtn-click:hover {
   color: rgb(0, 200, 200);
 }
 
@@ -1284,16 +1291,15 @@ color: white;
 
 
 /*Brukt samme footer som i index page*/
-.footer-activity-page {
+.activity-body .bottom-footer {
   background-color: rgb(0, 98, 112);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
   margin-top: 2em;
   text-align: center;
   font-family: Alumni Sans Pinstripe, sans-serif;
+  font-weight: bold;
 }
+
+
 
 .footer-activity-page ul {
   list-style: none;
@@ -1419,4 +1425,15 @@ main article img {
   width: 100%;
   max-width: 100%;
 }
+
+.github-body main a {
+  text-decoration: none;
+  color: black;
+}
+
+.github-body main a:hover{
+  text-decoration: underline;
+  color: purple;
+}
+
 
