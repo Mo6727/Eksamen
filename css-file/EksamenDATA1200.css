@@ -76,11 +76,15 @@ main {
 /*narrow screen - navbar*/
 @media (max-width: 650px) {
   .oslomet-logo, .view-nav-link {
-    height: 2em;
+    height: 1.7em;
     padding: 0;
+    margin-bottom: -0.1em;
   }
-  .dropdown-click-content {
-    margin-top: 0.5em !important;
+}
+
+@media (max-width: 650px) {
+.nav-container {
+    border-radius: 0 0 1em 1em;
   }
 }
 
