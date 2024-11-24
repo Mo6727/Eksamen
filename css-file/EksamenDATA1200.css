@@ -269,7 +269,29 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Skalerer først sammen med top-section*/
+@media (max-width: 1000px) {
+.big-infobox {
+  max-width: 70%;
+}
+  
+.learning-table {
+  font-size: 0.9em;
+}
 
+}
+
+/*Skalerer til små skjermer*/
+@media (max-width: 650px) {
+.big-infobox {
+  max-width: 90%;
+}
+
+.learning-table {
+  font-size: 0.8em;
+}
+
+
+}
 
 .dropdown-infobox {
   border-radius: 20px;
