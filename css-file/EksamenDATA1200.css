@@ -210,7 +210,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .top-section-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;/*4 bokser over, og resten nede. Intensjonen er at den skal autoskalere*/
   text-align: center;
   color:rgb(43, 43, 43);
   font-size: 2.5em;
@@ -1054,7 +1054,7 @@ margin-bottom: 8px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   border-style: dotted;
-  border-color: #ffffff;
+  border-color: rgb(255, 255, 255);
   border-radius: 2em;
   background-color: rgba(0, 200, 200, 0.565);
 }
@@ -1085,7 +1085,6 @@ margin-bottom: 8px;
   padding-bottom: 1em;
   }
 }
-
 
 /*table filmanmeldelser*/
 
