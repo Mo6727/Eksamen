@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <nav class="nav-container">
         <ul class="left-nav">
             <li><a href="https://www.oslomet.no/"><img class="oslomet-logo" src="pictures/Logo_of_Oslo_Metropolitan_University.svg" alt="OsloMetLogo"></a></li>
@@ -39,9 +39,9 @@
         </ul>
     </nav>
 </header>
-<!--Brukt kilde til å lage nav-bar.
+<!--Brukt kilde til å lage nav-bar (En seksjon til venstre og en seksjon til høyre).
 kilde: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css
-Brukt chatgpt for å lage dropdownmeny med click:
+Brukt chatgpt for å lage dropdownmeny med click (checkbox):
 Kilde chatgpt:
   Dropdown Structure
 <div class="dropdown">
@@ -63,7 +63,7 @@ Kilde chatgpt:
             <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
             <p>Bachelorprogram</p>
         </section>
-
+        <!--Grid, "div" for å lage bokser-->
         <section class="top-section-grid-container">
             <article class="top-section-grid">
                 <div class="grid-item1">
@@ -112,6 +112,31 @@ Kilde chatgpt:
 
 </section>
 
+    <!--Hvordan foregår undervisningen?-->
+    <section class="big-infobox">
+      <details class="dropdown-infobox">
+        <summary class="dropdown-button"><h2>Hvordan foregår undervisningen?</h2></summary>
+          <article class="infobox-content">
+            <h3>Undervisningen er en kombinasjon av:</h3>
+            <ul>
+            <li>Prosjektarbeid</li>
+            <li>Workshop</li>
+            <li>Presentasjoner</li>
+            <li>Veiledninger</li>
+            <li>Diskusjoner og refleksjoner</li>
+            <li>Forelesninger</li>
+            <li>Selvstudier</li>
+            <li>Gruppearbeid</li>
+            <li>Arbeidslivsrelevant bacheloroppgave</li>
+          </ul>
+          <aside class="infobox-aside-info">
+            <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.  </p>
+          </aside>
+        </article>
+      </details>
+    
+    </section>
+
 <!--Hva vil du lære?-->
 <section class="big-infobox">
   <details class="dropdown-infobox">
@@ -157,31 +182,6 @@ Kilde chatgpt:
   </details>
 </section>
 
-    <!--Hvordan foregår undervisningen?-->
-    <section class="big-infobox">
-      <details class="dropdown-infobox">
-        <summary class="dropdown-button"><h2>Hvordan foregår undervisningen?</h2></summary>
-          <article class="infobox-content">
-            <h3>Undervisningen er en kombinasjon av:</h3>
-            <ul>
-            <li>Prosjektarbeid</li>
-            <li>Workshop</li>
-            <li>Presentasjoner</li>
-            <li>Veiledninger</li>
-            <li>Diskusjoner og refleksjoner</li>
-            <li>Forelesninger</li>
-            <li>Selvstudier</li>
-            <li>Gruppearbeid</li>
-            <li>Arbeidslivsrelevant bacheloroppgave</li>
-          </ul>
-          <aside class="infobox-aside-info">
-            <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.  </p>
-          </aside>
-        </article>
-      </details>
-    
-    </section>
-
 
     <!--Studiets oppbygging-->
     <section class="big-infobox"> 
@@ -195,35 +195,35 @@ Kilde chatgpt:
   
           
           
-          <section id="year1" class="year-content">
+          <section id="year1" class="year-content"> <!--En id for å linke til tre forskjellige ting på samme side-->
           <h3>1. studieår</h3>
-          <section class="study-section">
-            <article class="semester">
+          <section class="study-section"> <!--En container for begge semesterne-->
+            <article class="semester"> <!--En klasse med semesterinformasjon-->
               <h2>Semester 1</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST" target="_blank">Diskret matematikk</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Programmering</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST" target="_blank">Programmering</a>
                 <footer class="card-footer">
                   <p>DAPE1400</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST" target="_blank">Teknologi og samfunn for programmerere</a>
                 <footer class="card-footer">
                   <p>DATA1100</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST" target="_blank">Innføring i modeller og beregninger</a>
+                <footer class="card-footer">
                     <p>MAMO1100</p>
                     <p>10 pts.</p>
                   </footer>
@@ -233,21 +233,21 @@ Kilde chatgpt:
             <article class="semester">
               <h2>Semester 2</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST" target="_blank">Matematikk1000</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST" target="_blank">Fysikk og kjemi</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Databaser</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST" target="_blank">Databaser</a>
                 <footer class="card-footer">
                   <p>DATA1500</p>
                   <p>10 pts.</p>
@@ -264,55 +264,27 @@ Kilde chatgpt:
               <article class="semester">
               <h2>Semester 3</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST" target="_blank">Matematikk 2000 med statistikk</a>
                 <footer class="card-footer">
-                  <p>DAPE1300</p>
+                  <p>DAPE2000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Programmering</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST" target="_blank">Moderne fysikk</a>
                 <footer class="card-footer">
-                  <p>DAPE1400</p>
+                  <p>MAMO2100</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
-              <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
-                <footer class="card-footer">
-                  <p>DATA1100</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
-                    <p>10 pts.</p>
-                  </footer>
-                </article>
             </article>
         
             <article class="semester">
               <h2>Semester 4</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST" target="_blank">Matematikk 4000</a>
                 <footer class="card-footer">
-                  <p>DAFE1000</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
-                <footer class="card-footer">
-                  <p>DAPE2101</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Databaser</h3>
-                <footer class="card-footer">
-                  <p>DATA1500</p>
+                  <p>DAVE3705</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
@@ -329,55 +301,27 @@ Kilde chatgpt:
               <article class="semester">
               <h2>Semester 3</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" target="_blank">Lineær algebra og introduksjon til gruppeteori</a>
                 <footer class="card-footer">
-                  <p>DAPE1300</p>
+                  <p>MAMO3200</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
-              <article class="subject-card">
-                <h3>Programmering</h3>
-                <footer class="card-footer">
-                  <p>DAPE1400</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
-                <footer class="card-footer">
-                  <p>DATA1100</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
-                    <p>10 pts.</p>
-                  </footer>
-                </article>
             </article>
         
             <article class="semester">
               <h2>Semester 4</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST" target="_blank">Termodynamikk og statistisk fysikk</a>
                 <footer class="card-footer">
-                  <p>DAFE1000</p>
+                  <p>MAMO2400</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" target="_blank">Symmetrier og algebraiske strukturer</a>
                 <footer class="card-footer">
-                  <p>DAPE2101</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Databaser</h3>
-                <footer class="card-footer">
-                  <p>DATA1500</p>
+                  <p>MAMO2500</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
@@ -393,53 +337,32 @@ Kilde chatgpt:
               <article class="semester">
               <h2>Semester 3</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" target="_blank"> Algoritmer og datastrukturer </a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
-              <article class="subject-card">
-                <h3>Programmering</h3>
-                <footer class="card-footer">
-                  <p>DAPE1400</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
-                <footer class="card-footer">
-                  <p>DATA1100</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
-                    <p>10 pts.</p>
-                  </footer>
-                </article>
             </article>
         
             <article class="semester">
               <h2>Semester 4</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST" target="_blank">Statistisk analyse</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" target="_blank">Visualisering</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Databaser</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" target="_blank">Avansert modellering og beregninger</a>
                 <footer class="card-footer">
                   <p>DATA1500</p>
                   <p>10 pts.</p>
@@ -456,55 +379,27 @@ Kilde chatgpt:
               <article class="semester">
               <h2>Semester 3</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" target="_blank">Algoritmer og datastrukturer</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
-              <article class="subject-card">
-                <h3>Programmering</h3>
-                <footer class="card-footer">
-                  <p>DAPE1400</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
-                <footer class="card-footer">
-                  <p>DATA1100</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
-                    <p>10 pts.</p>
-                  </footer>
-                </article>
             </article>
         
             <article class="semester">
               <h2>Semester 4</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" target="_blank">Ressurseffektive programmer</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" target="_blank">Avansert modellering og beregninger</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Databaser</h3>
-                <footer class="card-footer">
-                  <p>DATA1500</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
@@ -522,56 +417,21 @@ Kilde chatgpt:
             <article class="semester">
               <h2>Semester 5</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST" target="_blank">Matematikk 3000</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
-              <article class="subject-card">
-                <h3>Programmering</h3>
-                <footer class="card-footer">
-                  <p>DAPE1400</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
-                <footer class="card-footer">
-                  <p>DATA1100</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
-                    <p>10 pts.</p>
-                  </footer>
-                </article>
             </article>
         
             <article class="semester">
               <h2>Semester 6</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST" target="_blank">Bacheloroppgave</a>
                 <footer class="card-footer">
-                  <p>DAFE1000</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
-                <footer class="card-footer">
-                  <p>DAPE2101</p>
-                  <p>10 pts.</p>
-                </footer>
-              </article>
-              <article class="subject-card">
-                <h3>Databaser</h3>
-                <footer class="card-footer">
-                  <p>DATA1500</p>
-                  <p>10 pts.</p>
+                  <p>DATA3900</p>
+                  <p>20 pts.</p>
                 </footer>
               </article>
             </article>
@@ -586,55 +446,69 @@ Kilde chatgpt:
             <summary class="subject-select"><h3>Emnegruppe: Matematikk og fysikk</h3></summary>
             <section class="study-section">
               <article class="semester">
-              <h2>Semester 3</h2>
+              <h2>Semester 5</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" target="_blank">Reell analyse</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Programmering</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" target="_blank">Introduksjon til IT-forskning</a>
                 <footer class="card-footer">
                   <p>DAPE1400</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST" target="_blank">Introduction to Data Science with Scripting</a>
                 <footer class="card-footer">
                   <p>DATA1100</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" target="_blank">Datasikkerhet</a>
+                <footer class="card-footer">
                     <p>MAMO1100</p>
                     <p>10 pts.</p>
                   </footer>
                 </article>
+                <article class="subject-card">
+                  <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" target="_blank">Simulering og visualisering</a>
+                  <footer class="card-footer">
+                      <p>MAMO1100</p>
+                      <p>10 pts.</p>
+                    </footer>
+                  </article>
             </article>
         
             <article class="semester">
-              <h2>Semester 4</h2>
+              <h2>Semester 6</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" target="_blank">Testing av programvare</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" target="_blank">Datanettverk og skytjenester</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Databaser</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" target="_blank">Ressurseffektive programmer</a>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" target="_blank">Avansert modellering og beregninger</a>
                 <footer class="card-footer">
                   <p>DATA1500</p>
                   <p>10 pts.</p>
@@ -650,55 +524,62 @@ Kilde chatgpt:
             <summary class="subject-select"><h3>Emnegruppe: Statistiske og datadrevne metoder</h3></summary>
             <section class="study-section">
               <article class="semester">
-              <h2>Semester 3</h2>
+              <h2>Semester 5</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST" target="_blank">Introduksjon til Kunstig Intelligens</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Programmering</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" target="_blank">Introduksjon til IT-forskning</a>
                 <footer class="card-footer">
                   <p>DAPE1400</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST" target="_blank">Anvendt kunstig intelligens og data science prosjekt</a>
                 <footer class="card-footer">
                   <p>DATA1100</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" target="_blank">Datasikkerhet</a>
+                <footer class="card-footer">
                     <p>MAMO1100</p>
                     <p>10 pts.</p>
                   </footer>
                 </article>
+                <article class="subject-card">
+                  <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" target="_blank">Simulering og visualisering</a>
+                  <footer class="card-footer">
+                      <p>MAMO1100</p>
+                      <p>10 pts.</p>
+                    </footer>
+                  </article>
             </article>
         
             <article class="semester">
-              <h2>Semester 4</h2>
+              <h2>Semester 6</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" target="_blank">Testing av programvare</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" target="_blank">Datanettverk og skytjenester</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Databaser</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" target="_blank">Ressurseffektive programmer</a>
                 <footer class="card-footer">
                   <p>DATA1500</p>
                   <p>10 pts.</p>
@@ -713,55 +594,69 @@ Kilde chatgpt:
             <summary class="subject-select"><h3>Emnegruppe: Vitenskapelige beregninger</h3></summary>
             <section class="study-section">
               <article class="semester">
-              <h2>Semester 3</h2>
+              <h2>Semester 5</h2>
               <article class="subject-card">
-                <h3>Diskret matematikk</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" target="_blank">Simulering og visualisering</a>
                 <footer class="card-footer">
                   <p>DAPE1300</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Programmering</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" target="_blank">Introduksjon til IT-forskning</a>
                 <footer class="card-footer">
                   <p>DAPE1400</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Teknologi og samfunn for programmerere</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" target="_blank">Datasikkerhet</a>
                 <footer class="card-footer">
                   <p>DATA1100</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                  <h3>Innføring i modeller og beregninger</h3>
-                  <footer class="card-footer">
-                    <p>MAMO1100</p>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" target="_blank">Lineær algebra og introduksjon til gruppeteori</a>
+                <footer class="card-footer">
+                    <p>MAMO2300</p>
                     <p>10 pts.</p>
                   </footer>
                 </article>
+                <article class="subject-card">
+                  <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" target="_blank">Reell analyse</a>
+                  <footer class="card-footer">
+                      <p>MAMO1100</p>
+                      <p>10 pts.</p>
+                    </footer>
+                  </article>
             </article>
         
             <article class="semester">
-              <h2>Semester 4</h2>
+              <h2>Semester 6</h2>
               <article class="subject-card">
-                <h3>Matematikk 1000</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" target="_blank">Visualisering</a>
                 <footer class="card-footer">
                   <p>DAFE1000</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Fysikk og kjemi</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" target="_blank">Testing av programvare</a>
                 <footer class="card-footer">
                   <p>DAPE2101</p>
                   <p>10 pts.</p>
                 </footer>
               </article>
               <article class="subject-card">
-                <h3>Databaser</h3>
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" target="_blank">Datanettverk og skytjenester</a>
+                <footer class="card-footer">
+                  <p>DATA1500</p>
+                  <p>10 pts.</p>
+                </footer>
+              </article>
+              <article class="subject-card">
+                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" target="_blank">Symmetrier og algebraiske strukturer</a>
                 <footer class="card-footer">
                   <p>DATA1500</p>
                   <p>10 pts.</p>

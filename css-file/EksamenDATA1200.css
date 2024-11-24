@@ -11,6 +11,7 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
+/*Nav-bar brukt på alle html sider, med noe endringer*/
 /*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
 .nav-container, .nav-container-activity {
   display: flex;
@@ -35,13 +36,16 @@ main {
 }
 
 .oslomet-logo {
-  height: 5em;
+  height: 3.3em;
   padding-left: 2em;
   padding-right: 1.5em;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
 }
 
 .less-than-logo {
   height: 1.5em;
+  width: 1.5em;
   padding-top: 0.25em;
   padding-left: 2.5em;
 }
@@ -65,24 +69,26 @@ main {
   cursor: pointer;
 }
 
-/*linker i navbar forsvinner ved scaling*/
+/*linker i navbar forsvinner ved scaling(breakpoint), derfor la inn linkene i menybaren*/
 @media (max-width: 1200px) {
   .nav-link {
     display: none;
   }
 }
-/*narrow screen - navbar*/
+/*narrow screen - tilpasset navbar*/
 @media (max-width: 650px) {
   .oslomet-logo, .view-nav-link {
-    height: 2em;
+    height: 1.7em;
     padding: 0;
+    margin-bottom: -0.1em;
   }
-  .dropdown-click-content {
-    margin-top: 0.5em !important;
+  .nav-container {
+    border-radius: 0 0 1em 1em;
   }
 }
 
-/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT (kilde lenger nede) og weschool for å lage mega menu
+
+/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /* Dropdown Container */
 .dropdown-click {
@@ -120,8 +126,8 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   min-width: 160px;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-top: 1.2em;
-  border-radius: 2em;
+  margin-top: -0.01em;
+  border-radius: 0 0 2em 2em;
 }
 
 .dropdown-click-content a {
@@ -205,7 +211,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .top-section-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;/*4 bokser over, og resten nede. Intensjonen er at den skal autoskalere*/
   text-align: center;
   color:rgb(43, 43, 43);
   font-size: 2.5em;
@@ -213,7 +219,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   padding-right: 4rem;
   margin-bottom: 2em;
 }
-
+/*for styling og tilpasning, men kan bli litt kronglete ved endringer i koden*/
 .grid-item5 {
   padding-left: 4em;
 }
@@ -239,7 +245,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin-top: -1em;
 }
 
-/*grid->flex*/
+/*grid->flex ved breakpoint*/
 @media (max-width: 900px) {
   .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
   display: flex;
@@ -426,17 +432,25 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   min-height: 8em;
   transition: transform 0.7s;
+  text-decoration: none;
 }
 
 .subject-card:hover {
   transform: scale(1.07); /*Transform https://www.w3schools.com/cssref/css3_pr_transform.php*/
-  cursor: pointer;
 }
 
-.subject-card h3 {
-  color: rgb(85, 85, 85);
-  font-size: 1em;
-  padding-top: 0.5em;
+.subject-card a {
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 1.3em;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 213, 0);
+  text-decoration-thickness: 2px;
+}
+
+.subject-card a:hover {
+  opacity: 0.6;
 }
 
 .card-footer {
@@ -990,7 +1004,7 @@ margin-bottom: 8px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   border-style: dotted;
-  border-color: #ffffff;
+  border-color: rgb(255, 255, 255);
   border-radius: 2em;
   background-color: rgba(0, 200, 200, 0.565);
 }
@@ -1021,7 +1035,6 @@ margin-bottom: 8px;
   padding-bottom: 1em;
   }
 }
-
 
 /*table filmanmeldelser*/
 
