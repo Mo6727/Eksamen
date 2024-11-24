@@ -272,9 +272,27 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   max-width: 60%;
 }
 
-@media (max-width: 800px) {
+/*Skalerer først sammen med top-section*/
+@media (max-width: 768px) {
+.big-infobox {
+  max-width: 70%;
+}
+  
+.learning-table {
+  font-size: 0.9em;
+}
+
+}
+
+/*Skalerer til små skjermer*/
+@media (max-width: 480px) {
 .big-infobox {
   max-width: 90%;
+}
+
+.learning-table {
+  font-size: 0.6em;
+  padding: 0em;
 }
 
 
@@ -349,16 +367,16 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 /*Hva lærer du?*/
 .learning-table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0 auto;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(244, 244, 244);
 }
 
 .learning-table th, td {
   padding: 0.5em;
-  border: 1px solid black;
+  border: 1px solid rgb(140, 140, 140);
   vertical-align: top;
 }
 
@@ -1255,4 +1273,14 @@ color: white;
   height: 30em;
   width: 60em;
 
+}
+
+
+
+
+
+
+/*-----GITHUB PAGE-----*/
+.github-body {
+  margin: 0;
 }
