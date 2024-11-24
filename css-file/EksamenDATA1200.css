@@ -45,7 +45,6 @@ main {
 
 .less-than-logo {
   height: 1.5em;
-  width: 1.5em;
   padding-top: 0.25em;
   padding-left: 2.5em;
 }
@@ -822,6 +821,30 @@ font-size: 16px;
 margin-bottom: 8px;
 }
 
+@media (max-width: 480px) {
+  .section-scrollmenu-related-programs a {
+    width: 180px; 
+    padding: 8px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-scrollmenu-related-programs a {
+    width: 220px;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-scrollmenu-related-programs a {
+    width: 250px; 
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}
+
 /*footer start*/
 .bottom-footer {
   background-color: rgb(255, 213, 0);
@@ -994,7 +1017,6 @@ margin-bottom: 8px;
 
 .popcorn-logo {
   height: 15em;
-  width: 15em;
 }
 
 .activity-body h1 {
@@ -1037,7 +1059,7 @@ margin-bottom: 8px;
   opacity: 0.8;
 }
 
-/*grid->flex*/
+/*grid->flex (breakingpoints)*/
 @media (max-width: 1700px) {
   .movie-grid, .movie-grid-container {
   grid-template-columns: 1fr 1fr;
@@ -1062,7 +1084,7 @@ margin-bottom: 8px;
     margin-bottom: -1em;
   }
   .popcorn-logo {
-    height: 9em;
+    height: 10em;
   }
   .movie-img {
     height: 15em;
