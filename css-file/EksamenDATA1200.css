@@ -1372,6 +1372,12 @@ color: white;
 /*-----GITHUB PAGE-----*/
 .github-body {
   margin: 0;
+  text-align: center;
+}
+
+.github-body main article {
+  margin: 1.5em;
+  padding: 1.5em;
 }
 
 .github-body main article img {
@@ -1390,4 +1396,6 @@ color: white;
   color: purple;
 }
 
-
+.github-body ul {
+  list-style: none;
+}
