@@ -837,6 +837,10 @@ text-decoration: none;
 }
 
 
+
+
+
+
 /*scrollmenu*/
 .section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   background-color: white;
@@ -1409,3 +1413,10 @@ color: white;
 .github-body {
   margin: 0;
 }
+
+main article img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
