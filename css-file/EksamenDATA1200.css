@@ -998,6 +998,7 @@ margin-bottom: 8px;
 
 .popcorn-logo {
   height: 15em;
+  width: 15em;
 }
 
 .activity-body h1 {
@@ -1033,6 +1034,7 @@ margin-bottom: 8px;
   height: 35rem;
   border-radius: 2.5em;
   margin-bottom: -1em;
+  margin-top: -0.5em;
 }
 
 .movie-img:hover {
@@ -1133,7 +1135,7 @@ text-decoration: none;
 }
 
 td a:hover {
-text-decoration: underline;
+text-decoration: none;
 color: white;
 }    
 
