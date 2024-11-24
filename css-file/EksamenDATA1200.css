@@ -65,7 +65,7 @@ main {
   cursor: pointer;
 }
 
-/*linker i navbar forsvinner ved scaling*/
+/*linker i navbar forsvinner ved scaling(breakpoint)*/
 @media (max-width: 1200px) {
   .nav-link {
     display: none;
@@ -82,7 +82,7 @@ main {
   }
 }
 
-/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT (kilde lenger nede) og weschool for å lage mega menu
+/*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /* Dropdown Container */
 .dropdown-click {
