@@ -494,6 +494,18 @@ main {
   background-color: #ffd500;
   margin-bottom: 15px;
   border-radius: 8px;
+  min-height: 300px;
+  box-sizing: border-box;
+  line-height: 1.5; /* Konsistent linjeavstand */
+  font-size: 16px; /* Juster fonten basert på skjermstørrelse */
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.section-text, .img-smiley-box {
+  margin: 0; /* Nullstill margin */
+  padding: 0; /* Nullstill padding */
 }
 
 /* Text*/
@@ -613,11 +625,11 @@ text-decoration: none;
   .content-row {
     flex-direction: column; /* Stable tekst og bilde */
     align-items: center;
-    width: 100%; 
+    width: 100%;
   }
 
   .section-text, .img-smiley-box {
-    width: 100%;
+    width: 100%; /* Full bredde for små skjermer */
   }
 
   .section-text {
@@ -628,12 +640,56 @@ text-decoration: none;
     order: 2;
   }
 
+  .button-more-studentstories {
+    width: 100%; 
+    max-width: 300px; /* Begrens maks bredde for knappen */
+  }
 }
 
-@media (max-width: 768px) {
+/* Middels skjermer (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-studentstories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-row {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 90%; /* Gjør seksjonen litt bredere */
+  }
+
+  .section-text, .img-smiley-box {
+    width: 45%; /* Halv bredde for tekst og bilde */
+  }
+
   .button-more-studentstories {
-    width: 100%; /* Full width on small screens */
-    max-width: 300px; /* Optional: Limit maximum width */
+    max-width: 250px; 
+    font-size: 14px;
+  }
+}
+
+/* Store skjermer (1024px og oppover) */
+@media (min-width: 1025px) {
+  .article-studentstories {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Begrens bredden for større skjermer */
+  }
+
+  .content-row {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  .section-text, .img-smiley-box {
+    width: 50%; /* Lik fordeling mellom tekst og bilde */
+  }
+
+  .button-more-studentstories {
+    max-width: 200px;
   }
 }
 
@@ -894,7 +950,7 @@ margin-bottom: 8px;
 }
 
 
-/*table*/
+/*table filmanmeldelser*/
 
 .table {
   margin-top: 5em;
@@ -904,7 +960,7 @@ margin-bottom: 8px;
   margin: auto;
   border-collapse: collapse; 
   border: 1px solid #ddd;
-  width: 100%; /* Full width by default */
+  width: 100%; 
   max-width: 1200px;
   font-size: 1.5em; 
   overflow: hidden;
@@ -954,13 +1010,6 @@ tbody tr:last-child td:last-child {
   border-bottom-right-radius: 12px; /* Bottom right corner */
 }
 
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 12px; /* Bottom left corner */
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 12px;}
-
 /* Link */
 .table-filmanmeldelser a {
 color: black; 
@@ -974,29 +1023,17 @@ color: black;
 
 @media screen and (max-width: 768px) {
   .table-filmanmeldelser {
-    font-size: 0.8em; /* Reduce font size further for smaller screens */
+    font-size: 0.8em; 
   }
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
-    padding: 0.3em; /* Further reduce padding */
+    padding: 0.3em; 
   }
   .table-filmanmeldelser caption {
-    font-size: 1em; /* Adjust caption size for smaller screens */
+    font-size: 1em;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .table-filmanmeldelser {
-    font-size: 0.8em; /* Reduce font size further for smaller screens */
-  }
-  .table-filmanmeldelser th,
-  .table-filmanmeldelser td {
-    padding: 0.3em; /* Further reduce padding */
-  }
-  .table-filmanmeldelser caption {
-    font-size: 1em; /* Adjust caption size for smaller screens */
-  }
-}
 
 .filmklubb-bottom-text {
   margin-top: 3em;
@@ -1031,7 +1068,7 @@ color: black;
 
 
 
-/*footer start*/
+/*footer activity start*/
 .footer-activity-page {
   background-color: #006270;
   display: flex;
