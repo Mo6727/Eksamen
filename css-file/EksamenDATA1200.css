@@ -11,6 +11,7 @@ main {
   width: 100%;
 } /*Hvis ikke havner øverste delen av bodyen under navbaren*/
 
+/*Nav-bar brukt på alle html sider, med noe endringer*/
 /*kilde til navbar: https://stackoverflow.com/questions/78169850/how-to-align-a-logo-on-the-left-and-navigation-on-the-right-using-html-and-css*/
 .nav-container, .nav-container-activity {
   display: flex;
@@ -67,26 +68,24 @@ main {
   cursor: pointer;
 }
 
-/*linker i navbar forsvinner ved scaling(breakpoint)*/
+/*linker i navbar forsvinner ved scaling(breakpoint), derfor la inn linkene i menybaren*/
 @media (max-width: 1200px) {
   .nav-link {
     display: none;
   }
 }
-/*narrow screen - navbar*/
+/*narrow screen - tilpasset navbar*/
 @media (max-width: 650px) {
   .oslomet-logo, .view-nav-link {
     height: 1.7em;
     padding: 0;
     margin-bottom: -0.1em;
   }
-}
-
-@media (max-width: 650px) {
-.nav-container {
+  .nav-container {
     border-radius: 0 0 1em 1em;
   }
 }
+
 
 /*----- CLICK DROPDOWN, FIKK HJELP AV CHATGPT(for å lage checkbox) (kilde lenger nede) og weschool for å lage mega menu
 KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
@@ -219,7 +218,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   padding-right: 4rem;
   margin-bottom: 2em;
 }
-
+/*for styling og tilpasning, men kan bli litt kronglete ved endringer i koden*/
 .grid-item5 {
   padding-left: 4em;
 }
@@ -245,7 +244,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   margin-top: -1em;
 }
 
-/*grid->flex*/
+/*grid->flex ved breakpoint*/
 @media (max-width: 900px) {
   .top-section-grid, .grid-item6, .grid-item5, .grid-item7 {
   display: flex;
