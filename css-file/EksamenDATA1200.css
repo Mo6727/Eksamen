@@ -813,6 +813,30 @@ font-size: 16px;
 margin-bottom: 8px;
 }
 
+@media (max-width: 480px) {
+  .section-scrollmenu-related-programs a {
+    width: 180px; 
+    padding: 8px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-scrollmenu-related-programs a {
+    width: 220px;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-scrollmenu-related-programs a {
+    width: 250px; 
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}
+
 /*footer start*/
 .bottom-footer {
   background-color: rgb(255, 213, 0);
