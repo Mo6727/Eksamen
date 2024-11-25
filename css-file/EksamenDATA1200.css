@@ -727,22 +727,23 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   cursor: pointer;
 }
 
-.button-more-studentstories:hover {
-background-color: rgb(229, 191, 0);
-}
-
-.button-more-studentstories:active {
-transform: scale(0.98); 
-}
-
-.link-for-button {
-color: black;
-text-decoration: none;
-}
-
-.link-for-button:hover{
-  color: black;
+a.button-more-studentstories {
   text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(255, 213, 0);
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: background-color 0.5s, transform 0.2s;
+}
+
+a.button-more-studentstories:hover {
+  background-color: rgb(229, 191, 0);
+}
+
+a.button-more-studentstories:active {
+  transform: scale(0.98);
 }
 
 /* Scaling*/
