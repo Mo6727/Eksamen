@@ -1206,9 +1206,9 @@ border: 1px solid rgb(221, 221, 221);
 padding: 0.5em;
 text-align: left;
 vertical-align: top;
-word-wrap: break-word;
-overflow-wrap: break-word;
 min-height: 50px;
+white-space: normal;
+line-height: 1.5; 
 }
 
 /* Header Styling */
@@ -1233,32 +1233,29 @@ text-decoration: underline;
 color: white;
 }    
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .table-filmanmeldelser {
-    font-size: 0.8em; 
+    font-size: 0.9em; /* Slightly larger for readability */
   }
+
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
-    padding: 0.3em; 
-  }
-  .table-filmanmeldelser caption {
-    font-size: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .table-filmanmeldelser {
-    font-size: 0.8em;
+    padding: 0.3em;
+    line-height: 1.4; /* Adjust line height for smaller screens */
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
     padding: 0.3em;
     min-height: 40px;
   }
-}
 
+  .table-filmanmeldelser {
+    font-size: 0.8em; /* Slightly smaller for compact displays */
+  }
+}
 
 
 .filmklubb-bottom-text {
