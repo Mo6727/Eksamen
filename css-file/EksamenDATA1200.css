@@ -1164,11 +1164,11 @@ margin-bottom: 8px;
 /*table filmanmeldelser*/
 
 .section-filmanmeldelser{
-  margin: 5em auto; /* Center the section horizontally and add vertical margin */
-  padding: 1em; /* Add padding for spacing */
-  background-color: beige; /* A light background for contrast */
-  border-radius: 5px; /* Optional: Rounded corners for a modern look */
-  max-width: 1200px; /* Restrict the maximum width for better readability */
+  margin: 5em auto; 
+  padding: 1em; 
+  background-color: beige; 
+  border-radius: 5px; 
+  max-width: 1200px; 
   min-height: 500px;
 }
 
@@ -1233,15 +1233,16 @@ text-decoration: underline;
 color: white;
 }    
 
+/* @media*/
 @media (max-width: 768px) {
   .table-filmanmeldelser {
-    font-size: 0.9em; /* Slightly larger for readability */
+    font-size: 0.9em; 
   }
 
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
     padding: 0.3em;
-    line-height: 1.4; /* Adjust line height for smaller screens */
+    line-height: 1.4; 
   }
 }
 
@@ -1253,7 +1254,7 @@ color: white;
   }
 
   .table-filmanmeldelser {
-    font-size: 0.8em; /* Slightly smaller for compact displays */
+    font-size: 0.8em; 
   }
 }
 
