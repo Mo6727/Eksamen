@@ -793,7 +793,7 @@ a.button-more-studentstories:active {
   padding: 14px;
   background-color: rgb(255, 213, 0);
   margin: 2px;
-  width: 420px; 
+  width: 410px; 
   vertical-align: top;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -823,7 +823,7 @@ margin-bottom: 8px;
 
 @media (max-width: 480px) {
   .section-scrollmenu-related-programs a {
-    width: 420px;
+    width: 410px;
     padding: 8px;
     font-size: 0.6em; 
   }
@@ -837,7 +837,7 @@ margin-bottom: 8px;
 
 @media (max-width: 608px) {
   .section-scrollmenu-related-programs a {
-    width: 420px;
+    width: 410px;
     padding: 10px;
     font-size: 0.7em;
   }
@@ -851,7 +851,7 @@ margin-bottom: 8px;
 
 @media (max-width: 1200px) {
   .section-scrollmenu-related-programs a {
-    width: 420px; 
+    width: 410px; 
     padding: 12px;
     font-size: 0.9em;
   }
