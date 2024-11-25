@@ -702,6 +702,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   object-fit: cover;
   max-width: 100%; 
   border-radius: 8px;
+  transition: transform 0.5s;
 }
 
 .img-smiley:hover{
