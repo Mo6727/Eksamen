@@ -1163,9 +1163,15 @@ margin-bottom: 8px;
 
 /*table filmanmeldelser*/
 
-.table {
-  margin-top: 5em;
+.section-filmanmeldelser{
+  margin: 5em;
   padding: 0.5em;
+  background-color: beige;
+}
+
+.table-responsive {
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
 }
 
 .table-filmanmeldelser {
@@ -1177,6 +1183,7 @@ margin-bottom: 8px;
   font-size: 1.4em; 
   overflow: hidden;
   border-spacing: 0;
+  box-sizing: border-box;
 }
 
 /*heading filmanmeldelser*/
@@ -1199,6 +1206,7 @@ text-align: left;
 border: 1px solid rgb(221, 221, 221);
 padding: 0.5em;
 text-align: left;
+word-wrap: break-word;
 }
 
 /* Header Styling */
@@ -1235,6 +1243,14 @@ color: white;
     font-size: 1em;
   }
 }
+
+/* Limit column width for better mobile/tablet fit */
+.table-filmanmeldelser th:nth-child(), 
+.table-filmanmeldelser td:nth-child(4) {
+  max-width: 120px;  /* Limiting column size for Genre */
+}
+}
+
 
 
 .filmklubb-bottom-text {
@@ -1382,20 +1398,27 @@ color: white;
   margin: 0;
 }
 
+.github-body main {
+  text-align: center;
+}
+
+.github-body main article {
+  margin: 1.5em;
+  padding: 1.5em;
+}
+
+.github-body main article h1 {
+  font-size: xx-large;
+}
+
 .github-body main article img {
   height: 100%;
   width: 100%;
   max-width: 100%;
 }
 
-.github-body main a {
-  text-decoration: none;
-  color: black;
+.fordeler_github ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.github-body main a:hover{
-  text-decoration: underline;
-  color: purple;
-}
-
-
