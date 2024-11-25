@@ -1403,6 +1403,8 @@ color: white;
 
 
 /*-----GITHUB PAGE-----*/
+/*bruker samme header og footer css som i index*/
+
 .github-body {
   margin: 0;
 }
