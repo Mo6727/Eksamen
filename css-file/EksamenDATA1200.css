@@ -303,7 +303,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 
 /*Skalerer til små skjermer*/
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 .big-infobox {
   max-width: 90%;
 }
@@ -323,16 +323,10 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.8em;
 }
 
-.dropdown-subject-button h3 {
-  font-size: 0.7em;
-}
-
 .study-section {
   display: flex;
   flex-direction: column;
 }
-
-
 }
 
 .dropdown-infobox {
@@ -385,7 +379,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .infobox-content li {
   font-weight: 550;
   color: #333;
-  padding: 0.7em;
+  padding: 0.7em 0;
   list-style-type: none;
   text-align: left;
 }
@@ -708,6 +702,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   object-fit: cover;
   max-width: 100%; 
   border-radius: 8px;
+  transition: transform 0.5s;
 }
 
 .img-smiley:hover{
