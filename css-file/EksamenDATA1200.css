@@ -719,16 +719,16 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .button-more-studentstories {
   background-color: rgb(255, 213, 0);
   transition: background-color 0.5s, color 0.5s;
-  border:none;
+  border: none;
   border-radius: 8px;
-  height: 55px;
-  width: 210px;
   font-size: 16px;
+  width: 210px;
+  height: auto; /* Allow height to adjust dynamically */
+  padding: 15px; /* Add padding for touch area */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  padding: 1em;
   cursor: pointer;
 }
 
