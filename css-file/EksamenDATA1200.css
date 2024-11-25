@@ -1367,10 +1367,13 @@ color: white;
 .accessibility-matmod img {
   width: 100%;
   height: auto;
-  max-width: 600px;
-  display: block; 
-  margin-bottom: 3em;
+  max-width: 400px;
+  margin-bottom: 3em auto;
   border: 2px solid grey;
+}
+
+.accessibility-matmod p {
+  padding: 1em;
 }
 
 
