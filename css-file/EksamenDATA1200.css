@@ -276,7 +276,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 /*Skalerer først sammen med top-section*/
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 .big-infobox {
   max-width: 70%;
 }
@@ -285,53 +285,54 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   font-size: 0.9em;
 }
 
-.study-section {
-  display: flex;
-  flex-direction: column;
+.dropdown-subject-button h3 {
+  font-size: 0.8em;
 }
 
-.semester:first-child {
-  border-right: 0;
-  border-radius: 10px 10px 0px 0px;
-} 
-
-.semester:last-child {
-  border-radius: 0px 10px 0px 0px;
-} 
-
 .infobox-content .year-button {
-  margin: 0.4em;
+  margin: 1em;
   padding: 0.7em;
   font-size: 0.8em;
+}
+
+.content-with-aside {
+  flex-direction: column;
 }
 
 }
 
 
 /*Skalerer til små skjermer*/
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 .big-infobox {
   max-width: 90%;
 }
 
 .learning-table {
-  font-size: 0.6em;
+  font-size: 0.7em;
   padding: 0em;
-}
 }
 
 .infobox-content {
   margin: 1em;
 }
 
-.infobox-content li {
-  padding: -0.5em;
-}
-
 .infobox-content .year-button {
-  margin: 0.4em;
+  margin: 0.8em;
   padding: 0.7em;
   font-size: 0.8em;
+}
+
+.dropdown-subject-button h3 {
+  font-size: 0.7em;
+}
+
+.study-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
 }
 
 .dropdown-infobox {
@@ -377,28 +378,38 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 }
 
 .infobox-content {
-  margin: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
 .infobox-content li {
   font-weight: 550;
   color: #333;
-  padding: 0.2em;
-  margin-left: -3em;
+  padding: 0.7em;
   list-style-type: none;
-  flex: 2;
   text-align: left;
 }
 
+.content-with-aside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.content-with-aside li {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
 .infobox-aside-info {
-  border-radius: 8px;
+  flex: 1;
+  max-width: 200px;
   background-color: rgb(249, 249, 249);
   border: 1px solid rgb(204, 204, 204);
   border-radius: 8px;
-  padding: 1em;
+  padding: 2em;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 
 /*Hva lærer du?*/
@@ -426,7 +437,7 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 /*Studiets oppbygging - Ny versjon*/
 .year-button {
   display: inline-block;
-  padding: 0.8em 2em;
+  padding: 0.6em 1em;
   margin: 1em;
   font-weight: bold;
   font-size: 1.2em;
@@ -458,29 +469,23 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 
 .study-section {    
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  max-width: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
   margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
+  width: 90%;
   border-radius: 10px 10px 0px 0px;
 }
 
 .semester {
   display: flex;
   flex-direction: column;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   background-color: rgb(239, 239, 239);
   padding-bottom: 2em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 4px 7px 0px;
+  gap: 1em;
 }
 
-.semester:first-child {
-  border-right: 2px solid rgb(175, 175, 175);
-  border-radius: 10px 0px 0px 0px;
-} 
-
-.semester:last-child {
-  border-radius: 0px 10px 0px 0px;
-} 
 
 .semester h2 {
   color: rgb(67, 67, 67);
@@ -492,9 +497,10 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .subject-card {
   display: flex;
   flex-direction: column;
+  align-self: center;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
-  margin: 1em 3em;
+  width: 60%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   min-height: 8em;
   transition: transform 0.7s;
@@ -552,6 +558,8 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
   list-style: none;
   position: relative;
   background-color: rgb(255, 213, 0);
+  width: 90%;
+  margin: auto;
 }
 
 .dropdown-subject-group[open] .dropdown-subject-button {
@@ -1234,6 +1242,14 @@ color: white;
     font-size: 1em;
   }
 }
+
+/* Limit column width for better mobile/tablet fit */
+.table-filmanmeldelser th:nth-child(), 
+.table-filmanmeldelser td:nth-child(4) {
+  max-width: 120px;  /* Limiting column size for Genre */
+}
+
+
 
 
 .filmklubb-bottom-text {
