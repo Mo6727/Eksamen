@@ -714,35 +714,36 @@ KILDE: https://www.w3schools.com/howto/howto_css_mega_menu.asp-----*/
 .button-more-studentstories {
   background-color: rgb(255, 213, 0);
   transition: background-color 0.5s, color 0.5s;
-  border:none;
+  border: none;
   border-radius: 8px;
-  height: 55px;
-  width: 210px;
   font-size: 16px;
+  width: 210px;
+  height: auto; /* Allow height to adjust dynamically */
+  padding: 15px; /* Add padding for touch area */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  padding: 1em;
   cursor: pointer;
 }
 
-.button-more-studentstories:hover {
-background-color: rgb(229, 191, 0);
-}
-
-.button-more-studentstories:active {
-transform: scale(0.98); 
-}
-
-.link-for-button {
-color: black;
-text-decoration: none;
-}
-
-.link-for-button:hover{
-  color: black;
+a.button-more-studentstories {
   text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(255, 213, 0);
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: background-color 0.5s, transform 0.2s;
+}
+
+a.button-more-studentstories:hover {
+  background-color: rgb(229, 191, 0);
+}
+
+a.button-more-studentstories:active {
+  transform: scale(0.98);
 }
 
 /* Scaling*/
@@ -783,7 +784,7 @@ text-decoration: none;
 
 
 /*scrollmenu*/
-.section-scrollmenu-related-programs { /* scrollmenu https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
+.section-scrollmenu-related-programs { /* scrollmenu hentet fra: https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   background-color: white;
   overflow: auto;
   white-space: nowrap;
@@ -832,27 +833,27 @@ margin-bottom: 8px;
   .section-scrollmenu-related-programs a {
     width: 180px;
     padding: 8px;
-    font-size: 0.7em;
+    font-size: 0.6em; 
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 12px; 
+    font-size: 10px; 
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 13px; 
+    font-size: 12px; 
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 608px) {
   .section-scrollmenu-related-programs a {
     width: 220px;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 13px;
+    font-size: 9px;
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 14px; 
+    font-size: 10px; 
   }
 }
 
@@ -863,10 +864,10 @@ margin-bottom: 8px;
     font-size: 0.9em;
   }
   .section-scrollmenu-related-programs .program-item ul li {
-    font-size: 14px; 
+    font-size: 13px; 
   }
   .section-scrollmenu-related-programs .program-item strong {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -1404,8 +1405,14 @@ color: white;
 
 
 /*-----GITHUB PAGE-----*/
+/*bruker samme header og footer css som i index*/
+
 .github-body {
   margin: 0;
+}
+
+.github-body main {
+  text-align: center;
 }
 
 .github-body main article img {
@@ -1414,14 +1421,17 @@ color: white;
   max-width: 100%;
 }
 
-.github-body main a {
-  text-decoration: none;
-  color: black;
+.github-body main article {
+  margin: 1.5em;
+  padding: 1.5em;
 }
 
-.github-body main a:hover{
-  text-decoration: underline;
-  color: purple;
+.github-body main article h1 {
+  font-size: xx-large;
 }
 
-
+.fordeler_github ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
