@@ -35,15 +35,21 @@
         <h1>Accessibility</h1>
         <h2>MatMod/Index.html</h2>
     
-        <p>For å sikre at nettsiden vår oppfylte kravene til tilgjengelighet i henhold til Web Content Accessibility Guidelines (WCAG), testet vi nettsiden vår på ulike måter. Først og fremst brukte vi en ekstern nettside for å sjekke kontrastforholdet i fargepaletten vår. Ettersom vi ønsket å bruke OsloMet sin gule farge som en komplementær farge på nettsiden sammen med hvit som hovedfarge på bakgrunner, ble svart tekstfarge vurdert som det mest forsvarlige alternativet fra et tilgjengelighetsperspektiv. Vi reflekterte også over å muligens ha hvit farge på teksten hvor bakgrunnen er gul, for eksempel i navigasjonsmenyen, men dette viste seg å ha et veldig lavt kontrastforhold, og oppfylte dermed ikke minstekravene til WCAG (2023). Vi anvendte også en ekstern nettside for å simulere hvordan ulike deler av nettsiden ville se ut for forskjellige typer fargeblindhet, og siden vi kun bruker gul i kontrast med hvitt, svart og mørkegrått, hadde de liten påvirkning på lesbarhet. Basert på disse testene, endte vi opp med å kun ha svart og grå tekst både på gule og hvite bakgrunner ettersom de viste høy kontrast, og er lettere å lese enn andre farger. Videre, har noen elementer grå bakgrunnsfarge for å skille dem fra den hvite bakgrunnen og indikere et annet type innhold, for eksempel tabellen i delen “Hva lærer du” og «Studiets oppbygging», som også oppnås ved bruk av box-shadow.</p>
+        <p>For å sikre at nettsiden vår oppfylte kravene til tilgjengelighet i henhold til Web Content Accessibility Guidelines (WCAG), testet vi nettsiden vår på ulike måter. Først og fremst brukte vi en ekstern nettside for å sjekke kontrastforholdet i fargepaletten vår. Ettersom vi ønsket å bruke OsloMet sin gule farge som en komplementær farge på nettsiden sammen med hvit som hovedfarge på bakgrunner, ble svart tekstfarge vurdert som det mest forsvarlige alternativet fra et tilgjengelighetsperspektiv (se Figur 2). Vi reflekterte også over å muligens ha hvit farge på teksten hvor bakgrunnen er gul, for eksempel i navigasjonsmenyen, men dette viste seg å ha et veldig lavt kontrastforhold, og oppfylte dermed ikke minstekravene til WCAG (se Figur 1). Vi anvendte også en ekstern nettside for å simulere hvordan ulike deler av nettsiden ville se ut for forskjellige typer fargeblindhet, og siden vi kun bruker gul i kontrast med hvitt, svart og mørkegrått, hadde de liten påvirkning på lesbarhet. Basert på disse testene, endte vi opp med å kun ha svart og grå tekst både på gule og hvite bakgrunner ettersom de viste høy kontrast, og er lettere å lese enn andre farger. Videre, har noen elementer grå bakgrunnsfarge for å skille dem fra den hvite bakgrunnen og indikere et annet type innhold, for eksempel tabellen i delen “Hva lærer du” og «Studiets oppbygging», som også oppnås ved bruk av box-shadow.</p>
         <p>For å indikere at navigasjonsbaren inneholder lenker og kan trykkes på, ble det brukt "hover" funksjon, forutsatt at den ikke fungerer hvis man fysisk klikker på en skjerm. Videre, for lenker som kun står i deler av teksten på hovedinnholdet, markeres de med en gul underline for å skille den fra resten av teksten.
             Header/navigasjonsbaren er plassert fast på skjermen for å være lett tilgjengelig, slik at man slipper å scrolle helt opp igjen for å navigere videre. Har lagt "EN" for engelsk i navigasjonsbaren for å lettere få tilgang til engelsk språk.</p>
         <p>Når det kommer til selve innholdet, er det midtstilt for å gjøre det mer oversiktlig visning, noe som er spesielt nyttig for personer med lesevansker eller de som bruker forstørret skjerm. Det er også lagt opp for å støtte mest mulig vertikal navigasjon, der elementene stables i en kolonne på mindre skjermer for å unngå sideveis scrolling. Dette følger UX-prinsippet om at vertikal navigasjon oppleves som mer intuitiv og brukervennlig enn horisontal lesing. For å forhindre for mye scrolling derimot, har vi valgt å ha noen få infobokser man kan åpne og inneholder mye informasjon («Hva kan du jobbe som» osv.), og brukte åpne informasjonsbokser ved siden av hverandre for mindre informasjon. Vi har også brukt pseudo elementet :target i tillegg til < details > tag for hindre at all informasjonen blir vist på en gang, men heller kan bli vekslet mellom.</p>
         <p>Vi har valgt å konsistent bruke avrundede kanter for å gi en behagelig brukeropplevelse og noen for å indikere knapper (Material Design, u.d). Tekstene er utformet med samme lettleste skrifttype og fontstørrelser som sikrer god lesbarhet på både mobil og større skjermer. Gjennom html-en har vi lagt til "alt" for alle bilder for å gjøre dem mer tilgjengelige for screen readers, ettersom de gir alternativ tekst til bildene. Vi har også brukt semantiske HTML-elementer som < nav >, < header >, < table >, < article >, < section > og < footer >.</p>
+        <!--Kilder brukt:
+            Website accessibility – Mozilla: https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG 
+            Website accessibility: https://www.w3.org/TR/WCAG/ 
+            Website structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure 
+            Contrast colors: https://www.w3.org/TR/WCAG/#contrast-minimum-->
+
         <h3>Figur 1: Hvit kontrast</h3>
         <img src="pictures/accessibility-image1.png" alt="hvit-kontrast"> <!--Skjermbilde tatt fra https://www.siegemedia.com/contrast-ratio#%23000000-on-%23ffd500 -->
         <h3>Figur 2: Svart kontrast</h3>
-        <img src="pictures/accessibility-image2.png" alt="svart-kontrast">
+        <img src="pictures/accessibility-image2.png" alt="svart-kontrast"> <!--Skjermbilde tatt fra https://www.siegemedia.com/contrast-ratio#%23000000-on-%23ffd500 -->
     </article>
         
         
@@ -51,8 +57,6 @@
 
 
     </main>
-
-    <!--Skal vi ha footer her på denne siden?-->
     
 </body>
 </html>
