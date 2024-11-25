@@ -1363,19 +1363,15 @@ color: white;
   border-bottom: 1px solid black;
 }
 
-
-
-
-
-
-
 /*-----ACCESSIBILITY PAGE-----*/
-.activity-accessibility-img {
-  height: 30em;
-  width: 60em;
-
+.accessibility-matmod img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block; 
+  margin-bottom: 3em;
+  border: 2px solid grey;
 }
-
 
 
 
