@@ -1234,36 +1234,26 @@ color: white;
 }    
 
 @media (max-width: 768px) {
-  .section-filmanmeldelser {
-    margin: 1em; /* Adjust margin for smaller screens */
-    padding: 0.2em; /* Adjust padding for smaller screens */
-  }
   .table-filmanmeldelser {
-    font-size: 0.7em; /* Smaller font size for smaller screens */
+    font-size: 0.9em; /* Slightly larger for readability */
   }
+
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
-    padding: 0.2em; /* Smaller padding for smaller screens */
-  }
-  .table-filmanmeldelser caption {
-    font-size: 0.8em; /* Smaller caption font size */
+    padding: 0.3em;
+    line-height: 1.4; /* Adjust line height for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .section-filmanmeldelser {
-    margin: 0.5em; /* Adjust margin for very small screens */
-    padding: 0.1em; /* Adjust padding for very small screens */
-  }
-  .table-filmanmeldelser {
-    font-size: 0.6em; /* Smaller font size for very small screens */
-  }
   .table-filmanmeldelser th,
   .table-filmanmeldelser td {
-    padding: 0.1em; /* Smaller padding for very small screens */
+    padding: 0.3em;
+    min-height: 40px;
   }
-  .table-filmanmeldelser caption {
-    font-size: 0.7em; /* Smaller caption font size */
+
+  .table-filmanmeldelser {
+    font-size: 0.8em; /* Slightly smaller for compact displays */
   }
 }
 
