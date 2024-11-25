@@ -823,7 +823,7 @@ margin-bottom: 8px;
 
 @media (max-width: 480px) {
   .section-scrollmenu-related-programs a {
-    width: 330px;
+    width: 350px;
     padding: 8px;
     font-size: 0.6em; 
   }
@@ -837,7 +837,7 @@ margin-bottom: 8px;
 
 @media (max-width: 608px) {
   .section-scrollmenu-related-programs a {
-    width: 330px;
+    width: 350px;
     padding: 10px;
     font-size: 0.7em;
   }
@@ -851,7 +851,7 @@ margin-bottom: 8px;
 
 @media (max-width: 1200px) {
   .section-scrollmenu-related-programs a {
-    width: 330px; 
+    width: 350px; 
     padding: 12px;
     font-size: 0.9em;
   }
